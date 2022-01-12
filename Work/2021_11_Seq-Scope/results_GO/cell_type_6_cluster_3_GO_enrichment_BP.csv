@@ -1,0 +1,3 @@
+"","ID","Description","GeneRatio","BgRatio","pvalue","p.adjust","qvalue","geneID","Count","p.adjust.digits"
+"GO:0010770","GO:0010770","positive regulation of cell morphogenesis involved in differentiation","10/213","65/7417",1.38985096190322e-05,0.0398609255873844,0.0381550664067748,"Caprin1/Itpka/Dhx36/Tesk1/Lrp8/Ilk/P4hb/Numb/Nedd9/Cdkl5",10,0.04
+"GO:0050775","GO:0050775","positive regulation of dendrite morphogenesis","7/213","35/7417",4.94803752954315e-05,0.0478915071024804,0.045841976995988,"Caprin1/Itpka/Dhx36/Lrp8/Ilk/Numb/Cdkl5",7,0.048

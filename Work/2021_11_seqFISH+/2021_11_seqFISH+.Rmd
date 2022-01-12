@@ -1,0 +1,370 @@
+---
+title: "CCPLS Development"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r}
+## Prepare
+rm(list = ls())
+setwd("~/CCPLS_paper/Work/2021_11_seqFISH+")
+```
+
+
+```{r}
+# Reading files
+my_working_dir <- "~/CCPLS_Paper/Work/2021_11_seqFISH+"
+output_dir <- "/results_v0.1.8"
+set.seed(1)
+
+source(paste0(my_working_dir, "/function/readSeqfishPlusData.R"))
+res.readSeqfishPlusData <- readSeqfishPlusData(my_working_dir)
+
+exp_mat_seqFISHplus <- res.readSeqfishPlusData$exp_mat
+annot_mat_seqFISHplus <- res.readSeqfishPlusData$annot_mat
+coord_mat_seqFISHplus <- res.readSeqfishPlusData$corrd_mat
+
+## Prepare arguments
+exp_mat <- res.readSeqfishPlusData$exp_mat
+annot_mat <- res.readSeqfishPlusData$annot_mat
+coord_mat <- res.readSeqfishPlusData$corrd_mat
+```
+
+```{r}
+## Delete variables
+rm(list=ls()[! ls() %in% c("exp_mat", "coord_mat", "annot_mat",
+                           "my_working_dir", "output_dir")])
+
+## Perform CCPLS
+source(paste0(my_working_dir, "/v0.1.8/R/cellCellRegMain.R"))
+res.main <- cellCellRegMain(exp_mat = exp_mat,
+                            coord_mat = coord_mat,
+                            annot_mat = annot_mat,
+                            HVG_opt = TRUE,
+                            HVG_extract_num = 2000,
+                            dev_opt = "pls",
+                            my_working_dir = my_working_dir,
+                            output_dir = output_dir)
+```
+
+
+```{r}
+## HVG overlap
+output_dir <- "/results_v0.1.8_ov"
+
+cell_type_num <- length(res.main$res.sep.mat$HVG_sep_list)
+HVG_extract_num <- length(res.main$res.sep.mat$HVG_sep_list[[1]])
+
+ov_mat <- matrix(0, nrow = cell_type_num, ncol = cell_type_num)
+rownames(ov_mat) <- res.main$res.sep.mat$cell_type_list
+colnames(ov_mat) <- res.main$res.sep.mat$cell_type_list
+
+for (row_ind in 1:cell_type_num){
+  for (col_ind in 1:cell_type_num){
+    ov_mat[row_ind, col_ind] <- length(intersect(res.main$res.sep.mat$HVG_sep_list[[row_ind]],
+                                          res.main$res.sep.mat$HVG_sep_list[[col_ind]]))
+  }
+}
+
+ov_mat_2 <- ov_mat / HVG_extract_num
+
+png(paste0(my_working_dir, output_dir, "/HVGs_overlap_seqFISH+.png"), width = 600)
+NMF::aheatmap(ov_mat_2, fontsize = 14, cexRow = 1, cexCol = 1,
+              Rowv = NA, Colv = NA, cellwidth = 28)
+dev.off()
+
+pdf(paste0(my_working_dir, output_dir, "/HVGs_overlap_seqFISH+.pdf"), width = 8)
+NMF::aheatmap(ov_mat_2, fontsize = 14, cexRow = 1, cexCol = 1,
+              Rowv = NA, Colv = NA, cellwidth = 28)
+dev.off()
+
+ov_mat_2[upper.tri(ov_mat_2)]
+ov_mean <- mean(ov_mat_2[upper.tri(ov_mat_2)])
+ov_max <- max(ov_mat_2[upper.tri(ov_mat_2)])
+
+sink(paste0(my_working_dir, output_dir, "/ov_mean.txt"))
+print(paste0("Mean value of the overlap HVGs is ", ov_mean))
+sink()
+
+sink(paste0(my_working_dir, output_dir, "/ov_max.txt"))
+print(paste0("Max value of the overlap HVGs is ", ov_max))
+sink()
+```
+
+
+```{r}
+## Classify clusters
+output_dir_class <- "/results_v0.1.8_class"
+
+thresh <- 0.5
+cell_type_num <- length(res.main$res.sel.var$gene_cluster_vec_list)
+cell_type_list <- res.main$res.sel.var$cell_type_list
+
+for (cell_type_ind in 1:cell_type_num){
+  
+  target_cell_type <- res.main$res.sel.var$cell_type_list[[cell_type_ind]]
+  cluster_num <- max(res.main$res.sel.var$gene_cluster_vec_list[[cell_type_ind]])
+  
+  if (cluster_num != "NULL"){
+    
+    judge_mat <- matrix(0, nrow = cell_type_num, ncol = cluster_num)
+    rownames(judge_mat) <- cell_type_list
+    colnames(judge_mat) <- as.character(seq(1:cluster_num))
+
+    for (cluster_ind in 1:cluster_num){
+      
+      gene_cluster_vec <- res.main$res.sel.var$gene_cluster_vec_list[[cell_type_ind]]
+      cluster_flag <- gene_cluster_vec == cluster_ind
+      cluster_gene <- names(gene_cluster_vec[cluster_flag])
+      sig_coef_mat_bin_2 <- res.main$res.sel.var$sig_coef_mat_bin_2_list[[cell_type_ind]]
+      cluster_coef_mat <- sig_coef_mat_bin_2[,cluster_gene]
+      
+      if (!is.null(nrow(cluster_coef_mat))){
+        ratio <- apply(cluster_coef_mat, 1, sum) / length(cluster_gene)
+        cluster_cell_type <- names(ratio)[ratio > thresh]
+      } else {
+        cluster_cell_type <- names(cluster_coef_mat[cluster_coef_mat > 0])
+      }
+      
+      # n_freq <- sum(cluster_coef_mat)
+      
+      cct_num <- length(cluster_cell_type)
+      cluster_cell_type_2 <- c()
+      
+      for (cct_id in 1:cct_num){
+        cluster_cell_type_2 <- append(cluster_cell_type_2,
+                                      stringr::str_split(cluster_cell_type,
+                                                         pattern = "neig_")[[cct_id]][[2]])
+      }
+      
+      judge_vec <- rep(0, cell_type_num)
+      for (cct_id in 1:cct_num){
+        judge_vec[cluster_cell_type_2[cct_id] == cell_type_list] <- 1
+      }
+      
+      judge_mat[, cluster_ind] <- judge_vec
+
+      # Save
+      sink(paste0(my_working_dir, output_dir_class, "/",
+                  "cell_type_", cell_type_ind, "_cluster_", cluster_ind, ".txt"))
+      print(cluster_cell_type_2)
+      sink()
+    
+    } 
+    
+    pdf(paste0(my_working_dir, output_dir_class, "/",
+        "cell_type_", cell_type_ind, ".pdf"))
+    NMF::aheatmap(judge_mat, fontsize = 14, cexRow = 1, cexCol = 1,
+              Rowv = NA, Colv = NA, cellwidth = 28)
+    dev.off()
+
+  }
+  
+}
+```
+
+
+```{r}
+## GO analysis
+output_dir_go <- "/results_GO"
+
+cell_type_num <- length(res.main$res.sel.var$gene_cluster_vec_list)
+cell_type_list <- res.main$res.estimate$cell_type_list
+
+union_cell_type <- c(3, 4, 7, 12)
+
+  go_opt <- "BP"
+  cutoff <- 0.05
+  
+  library(clusterProfiler)
+  library(DOSE)
+  library(org.Hs.eg.db)
+  library(org.Mm.eg.db)
+
+  # prepare function
+  beera <- function(expr){
+    tryCatch(expr,
+           error = function(e){
+             # message("An error occurred:\n", e)
+             return("An error occurred")
+           })
+  }
+
+  hs <- org.Mm.eg.db
+
+  for (cell_type_ind in 1:cell_type_num){
+    
+    if (!is.null(res.main$res.sel.var$all_zero_flag_list[[cell_type_ind]])){
+      if (!res.main$res.sel.var$all_zero_flag_list[[cell_type_ind]]){
+        
+        exp_mat_orig <- res.main$res.sep.mat$exp_mat_orig_sep_list[[cell_type_ind]]
+        bg_ind <- apply(exp_mat_orig, 2, sum) != 0
+        gene_bg_list <- colnames(exp_mat_orig[, bg_ind])
+        
+        gene_bg_list_2 <- biomaRt::select(hs,
+                                          keys = gene_bg_list,
+                                          columns = c("ENTREZID", "SYMBOL"),
+                                          keytype = "SYMBOL")
+        
+        write.table(gene_bg_list, paste0(my_working_dir, output_dir_go, "/gene_list/",
+                                         cell_type_ind, "_gene_bg_list.txt"),
+                    row.names = FALSE)
+        
+        gene_cluster_vec <- res.main$res.sel.var$gene_cluster_vec_list[[cell_type_ind]]
+        cluster_num <- max(gene_cluster_vec)
+        
+        for (cluster_ind in 1:cluster_num){
+         
+          gene_list <- names(gene_cluster_vec[gene_cluster_vec == cluster_ind])
+
+          if (cell_type_ind %in% union_cell_type){
+            gene_list <- names(res.main$res.sel.var$gene_cluster_vec_list[[cell_type_ind]])
+          }
+          
+          print(length(gene_bg_list))
+        
+          returned_value <- beera(biomaRt::select(hs,
+                                                  keys = gene_list,
+                                                  columns = c("ENTREZID", "SYMBOL"),
+                                                  keytype = "SYMBOL")) %>% suppressWarnings()
+        
+          write.table(gene_list, paste0(my_working_dir, output_dir_go, "/gene_list/",
+                                        "cell_type_", cell_type_ind, "_", cluster_ind,"_gene_list.txt"),
+                      row.names = FALSE)
+        
+          if (length(returned_value) > 1){ # "An error occurred"以外
+          
+            gene_list_2 <- biomaRt::select(hs,
+                                           keys = gene_list,
+                                           columns = c("ENTREZID", "SYMBOL"),
+                                           keytype = "SYMBOL")
+          
+          } else {
+          
+            gene_list_2 <- gene_list
+          
+          }
+          
+          if (!is.null(gene_list_2)){
+          
+            ego <- clusterProfiler::enrichGO(gene = gene_list_2[,"ENTREZID"],
+                                             universe      = gene_bg_list_2[,"ENTREZID"],
+                                             OrgDb         = hs,
+                                             ont           = go_opt,
+                                             pAdjustMethod = "BH",
+                                             pvalueCutoff  = cutoff,
+                                             readable      = TRUE)
+            
+            ego <- simplify(ego)
+
+            ego_res <- ego@result
+
+            ego_res$p.adjust.digits <- round(ego_res$p.adjust, digits = 3)
+            
+            ego_res_tidy <- ego_res %>% dplyr::as_tibble()
+        
+            if (nrow(ego_res_tidy > 0)){
+              
+              saveRDS(ego, paste0(my_working_dir,
+                                  output_dir_go, "/",
+                                  "cell_type_", cell_type_ind,
+                                  "_cluster_", cluster_ind,
+                                  "_ego.rds"))
+              
+              write.csv(ego_res, paste0(my_working_dir, output_dir_go, "/",
+                                          "cell_type_", cell_type_ind,　"_cluster_", cluster_ind,
+                                          "_GO_enrichment_BP.csv"))
+            }
+
+            
+          }
+        
+        }
+        
+      }
+      
+    }
+
+  }
+  
+## Output figures
+
+# cell type 4 cluster 1 and 2
+ego <- readRDS(paste0(my_working_dir,
+                      output_dir_go, "/cell_type_4_cluster_1_ego.rds"))
+
+pdf(paste0(my_working_dir, output_dir_go, "/cell_type_4_cluster_1_and_2_GO_enrichment_BP.pdf"),
+    width = 12, height = nrow(ego)/2)
+barplot(ego,
+        font.size = 14,
+        showCategory = nrow(ego),
+        title = paste0("Results of GO enrichment analysis in the ",
+                       cell_type_list[4],
+                       " SRGs cluster 1 and 2"))
+dev.off()
+
+# cell type 5 cluster 1
+ego <- readRDS(paste0(my_working_dir,
+                      output_dir_go, "/cell_type_5_cluster_1_ego.rds"))
+
+pdf(paste0(my_working_dir, output_dir_go, "/cell_type_5_cluster_1_GO_enrichment_BP.pdf"),
+    width = 12, height = nrow(ego)/2)
+barplot(ego,
+        font.size = 14,
+        showCategory = nrow(ego),
+        title = paste0("Results of GO enrichment analysis in the ",
+                       cell_type_list[5],
+                       " SRGs cluster 1"))
+dev.off()
+
+# cell type 6 cluster 2
+ego <- readRDS(paste0(my_working_dir,
+                      output_dir_go, "/cell_type_6_cluster_2_ego.rds"))
+
+pdf(paste0(my_working_dir, output_dir_go, "/cell_type_6_cluster_2_GO_enrichment_BP.pdf"),
+    width = 12, height = nrow(ego)/2)
+barplot(ego,
+        font.size = 14,
+        showCategory = nrow(ego),
+        title = paste0("Results of GO enrichment analysis in the ",
+                       cell_type_list[6],
+                       " SRGs cluster 2"))
+dev.off()
+
+# cell type 12 cluster 1 and 2
+ego <- readRDS(paste0(my_working_dir,
+                      output_dir_go, "/cell_type_12_cluster_1_ego.rds"))
+
+pdf(paste0(my_working_dir, output_dir_go, "/cell_type_12_cluster_1_and_2_GO_enrichment_BP.pdf"),
+    width = 12, height = nrow(ego)/2)
+barplot(ego,
+        font.size = 14,
+        showCategory = nrow(ego),
+        title = paste0("Results of GO enrichment analysis in the ",
+                       cell_type_list[12],
+                       " SRGs cluster 1 and 2"))
+dev.off()
+
+# for main figure
+pdf(paste0(my_working_dir, output_dir_go, "/figure_3e_cell_type_12_cluster_1_and_2_GO_enrichment_BP.pdf"),
+    width = 12, height = 4)
+barplot(ego,
+        font.size = 14,
+        showCategory = 10,
+        title = paste0("Results of GO enrichment analysis in the ",
+                       cell_type_list[12],
+                       " SRGs cluster 1 and 2"))
+dev.off()
+```
+
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

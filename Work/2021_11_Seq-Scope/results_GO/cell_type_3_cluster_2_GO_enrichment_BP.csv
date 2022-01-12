@@ -1,0 +1,2 @@
+"","ID","Description","GeneRatio","BgRatio","pvalue","p.adjust","qvalue","geneID","Count","p.adjust.digits"
+"GO:0006730","GO:0006730","one-carbon metabolic process","7/327","14/4878",1.30003343880408e-05,0.039521016539644,0.0385630971636831,"Car1/Car2/Car9/Tyms/Ahcyl2/Mat2a/Car4",7,0.04

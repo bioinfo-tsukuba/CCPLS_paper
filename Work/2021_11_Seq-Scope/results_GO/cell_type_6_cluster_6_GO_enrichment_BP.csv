@@ -1,0 +1,2 @@
+"","ID","Description","GeneRatio","BgRatio","pvalue","p.adjust","qvalue","geneID","Count","p.adjust.digits"
+"GO:0071168","GO:0071168","protein localization to chromatin","3/45","11/7417",3.32908309392502e-05,0.0330245042917362,0.0330104870997618,"Ezh2/Esco2/Msh2",3,0.033

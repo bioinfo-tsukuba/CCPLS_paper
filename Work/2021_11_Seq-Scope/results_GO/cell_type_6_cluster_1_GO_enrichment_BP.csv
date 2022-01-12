@@ -1,0 +1,2 @@
+"","ID","Description","GeneRatio","BgRatio","pvalue","p.adjust","qvalue","geneID","Count","p.adjust.digits"
+"GO:0042149","GO:0042149","cellular response to glucose starvation","6/138","26/7417",6.30581928065626e-06,0.013538593995569,0.0134148008065329,"Nfe2l2/Zc3h12a/Tbl2/Mtmr3/Xbp1/Becn1",6,0.014

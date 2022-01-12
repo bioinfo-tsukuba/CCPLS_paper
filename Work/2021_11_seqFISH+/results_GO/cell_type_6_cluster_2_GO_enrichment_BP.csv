@@ -1,0 +1,10 @@
+"","ID","Description","GeneRatio","BgRatio","pvalue","p.adjust","qvalue","geneID","Count","p.adjust.digits"
+"GO:0008334","GO:0008334","histone mRNA metabolic process","1/1","12/9489",0.00126462219411949,0.0168616292549264,NA,"Mtpap",1,0.017
+"GO:0006378","GO:0006378","mRNA polyadenylation","1/1","30/9489",0.00316155548529884,0.0168616292549264,NA,"Mtpap",1,0.017
+"GO:0043631","GO:0043631","RNA polyadenylation","1/1","30/9489",0.00316155548529884,0.0168616292549264,NA,"Mtpap",1,0.017
+"GO:0031124","GO:0031124","mRNA 3'-end processing","1/1","40/9489",0.0042154073137316,0.0168616292549264,NA,"Mtpap",1,0.017
+"GO:0000956","GO:0000956","nuclear-transcribed mRNA catabolic process","1/1","69/9489",0.00727157761618735,0.0193908736431663,NA,"Mtpap",1,0.019
+"GO:0044270","GO:0044270","cellular nitrogen compound catabolic process","1/1","219/9489",0.0230793550426811,0.0295078511961221,NA,"Mtpap",1,0.03
+"GO:0046700","GO:0046700","heterocycle catabolic process","1/1","219/9489",0.0230793550426811,0.0295078511961221,NA,"Mtpap",1,0.03
+"GO:0019439","GO:0019439","aromatic compound catabolic process","1/1","230/9489",0.0242385920539573,0.0295078511961221,NA,"Mtpap",1,0.03
+"GO:1901361","GO:1901361","organic cyclic compound catabolic process","1/1","243/9489",0.02560859943092,0.0295078511961221,NA,"Mtpap",1,0.03

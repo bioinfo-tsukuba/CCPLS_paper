@@ -1,0 +1,3 @@
+"","ID","Description","GeneRatio","BgRatio","pvalue","p.adjust","qvalue","geneID","Count","p.adjust.digits"
+"GO:0090066","GO:0090066","regulation of anatomical structure size","18/150","247/6445",1.46711745973637e-05,0.0208360091352374,0.0197728137349118,"Arfgef1/Nck2/Creb1/Capza1/Rap1gds1/Hp1bp3/Eps8/Coro1a/Rpl4/Dbnl/Rtn4/Npm1/Kcnma1/Ptk2b/Ep300/Ptprm/Lars/Capn1",18,0.021
+"GO:0032535","GO:0032535","regulation of cellular component size","16/150","203/6445",1.71701764608466e-05,0.0208360091352374,0.0197728137349118,"Arfgef1/Nck2/Creb1/Capza1/Hp1bp3/Eps8/Coro1a/Rpl4/Dbnl/Rtn4/Npm1/Kcnma1/Ptk2b/Ep300/Lars/Capn1",16,0.021

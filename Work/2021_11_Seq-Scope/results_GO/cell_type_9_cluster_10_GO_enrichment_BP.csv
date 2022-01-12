@@ -1,0 +1,4 @@
+"","ID","Description","GeneRatio","BgRatio","pvalue","p.adjust","qvalue","geneID","Count","p.adjust.digits"
+"GO:0006412","GO:0006412","translation","18/125","452/9641",1.95951655297807e-05,0.037705110051059,0.0350712772747267,"Tpr/Eif2ak4/Mrpl24/Mrpl9/Rpusd3/Rps3/Rwdd1/Eef2/Rps27a/Drg2/Akt1/Mrps16/Dnajc3/Rpl30/Trmt10c/App/Rpl36/Eif1a",18,0.038
+"GO:0043043","GO:0043043","peptide biosynthetic process","18/125","466/9641",2.94456150340172e-05,0.037705110051059,0.0350712772747267,"Tpr/Eif2ak4/Mrpl24/Mrpl9/Rpusd3/Rps3/Rwdd1/Eef2/Rps27a/Drg2/Akt1/Mrps16/Dnajc3/Rpl30/Trmt10c/App/Rpl36/Eif1a",18,0.038
+"GO:2000401","GO:2000401","regulation of lymphocyte migration","5/125","32/9641",5.14342244841345e-05,0.0439076829679561,0.0408405789500338,"Mia3/Med23/Ccl5/Akt1/App",5,0.044
