@@ -70,6 +70,50 @@ for (file_id in 1:1){
                             my_working_dir = my_working_dir,
                             output_dir = output_dir)
 
+  saveRDS(res.main, paste0("results_CCPLS/res.main.", file_id, ".seq_scope.rds"))
+  res.main <- readRDS(paste0("results_CCPLS/res.main.1.seq_scope.rds"))
+  
+  # Tbc1d20/Hnf4a/Sox18/Rapgef2/Nup210l/Myadm/Sidt2/Gpx1/Psap/Pcdh15/Xbp1/Foxa1/Atf4/Fshr/Yipf6
+  imm_exp_mat <- res.main$res.sep.mat$exp_mat_sep_list[[3]]
+  imm_tg_exp <- imm_exp_mat[, "Foxa1"]
+  plot_list <- c("B.cell-IgA", "B.cell-Immature")
+  plot_flag <- annot_mat[, 3] %in% plot_list
+  annot_mat_2 <- annot_mat
+  annot_mat_2[!plot_flag, 3] <- "Others"
+
+  imm_flag <- annot_mat_2[, 3] == "B.cell-Immature"
+  imm_coord <- coord_mat[imm_flag, ]
+  imm_exp_coord <- cbind(as.double(imm_tg_exp), imm_coord) %>% as_tibble()
+
+  iga_flag <- annot_mat_2[, 3] %in% "B.cell-IgA"
+  iga_coord <- as_tibble(coord_mat[iga_flag, ])
+  iga_coord_2 <- cbind(iga_coord, rep("B cell-IgA", nrow(iga_coord)))
+  colnames(iga_coord_2) <- c("cell_ID", "X", "Y", "Cell_type")
+
+  oth_coord <- as_tibble(coord_mat[!plot_flag, ])
+  oth_coord_2 <- cbind(oth_coord, rep("Others", nrow(oth_coord)))
+  colnames(oth_coord_2) <- c("cell_ID", "X", "Y", "Cell_type")
+
+  saveRDS(imm_exp_coord, paste0(my_working_dir, "/results_CCPLS/imm_exp_coord.rds"))
+  saveRDS(iga_coord_2, paste0(my_working_dir, "/results_CCPLS/iga_coord_2.rds"))
+  saveRDS(oth_coord_2, paste0(my_working_dir, "/results_CCPLS/oth_coord_2.rds"))
+
+  p <- ggplot() +
+          geom_point(data = imm_exp_coord, aes(x = x_coord, y = y_coord, color = imm_tg_exp)) +
+                    scale_color_viridis_c() +
+          geom_point(data = iga_coord_2, aes(x = X, y = Y, fill = Cell_type),
+                    alpha = 0.6, color = "salmon") +
+          geom_point(data = oth_coord_2, aes(x = X, y = Y), alpha = 0.1) +
+          theme_bw() +
+          theme(aspect.ratio = 1) +
+          ggtitle("Distribution of Foxa1 expression in B cell-Immature") +
+          xlab("X coordinate") +
+          ylab("Y coordinate")
+
+  pdf(paste0(my_working_dir, "/results_CCPLS/Foxa1_orig.pdf"))
+  plot(p)
+  dev.off()
+  
   ## Check
   # cell_judge_vec <- c()
   # for (cell_id in 1:nrow(exp_mat)){
