@@ -1,0 +1,10 @@
+"","Stem","Fibroblast","Smooth.Muscle","DCSC","Paneth-like","B.cell-IgA","Macrophage","B.cell-IgG","B.cell-Immature"
+"Stem",332,0,0,1,0,36,53,45,71
+"Fibroblast",0,0,9,50,0,40,105,0,0
+"Smooth.Muscle",0,46,0,55,0,27,72,51,0
+"DCSC",0,24,30,85,0,18,13,58,101
+"Paneth-like",0,0,0,0,0,57,0,0,104
+"B.cell-IgA",21,53,66,15,63,0,43,0,20
+"Macrophage",37,62,38,5,0,38,0,24,122
+"B.cell-IgG",42,0,65,101,0,1,30,0,0
+"B.cell-Immature",52,0,0,251,119,33,119,0,0
