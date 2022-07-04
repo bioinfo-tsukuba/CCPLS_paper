@@ -92,13 +92,14 @@ p <- ggplot() +
           geom_point(data = opc_exp_coord, aes(x = X, y = Y, color = opc_mag_exp)) +
                      scale_color_viridis_c() +
           geom_point(data = olig_coord_2, aes(x = X, y = Y, fill = Cell_type),
-                     alpha = 0.6, color = "salmon") +
+                     alpha = 0.6, color = "black", shape = "triangle") +
           geom_point(data = ast_coord_2, aes(x = X, y = Y, fill = Cell_type),
-                     alpha = 0.6, color = "purple") +
-          geom_point(data = oth_coord_2, aes(x = X, y = Y), alpha = 0.1) +
+                     alpha = 0.6, color = "black", shape = "square") +
+          geom_point(data = oth_coord_2, aes(x = X, y = Y, fill = Cell_type),
+                     alpha = 0.1, shape = "plus") +
           theme_bw() +
           theme(aspect.ratio = 0.5) +
-          ggtitle("Distribution of Mag expression in OPC") +
+          ggtitle("Spatial distribution of Mag expression in OPC") +
           xlab("X coordinate") +
           ylab("Y coordinate")
 
