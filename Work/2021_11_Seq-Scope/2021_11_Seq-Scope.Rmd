@@ -73,9 +73,19 @@ for (file_id in 1:1){
   saveRDS(res.main, paste0("results_CCPLS/res.main.", file_id, ".seq_scope.rds"))
   res.main <- readRDS(paste0("results_CCPLS/res.main.1.seq_scope.rds"))
   
+  ## GO results 
   # Tbc1d20/Hnf4a/Sox18/Rapgef2/Nup210l/Myadm/Sidt2/Gpx1/Psap/Pcdh15/Xbp1/Foxa1/Atf4/Fshr/Yipf6
+  # Nup210l/Myadm
+  # Gpx1
+  
+  # Pick up and check
+  gc_vec <- res.main$res.sel.var$gene_cluster_vec_list[[3]]
+  t_flag <- gc_vec == 4
+  gc_vec[t_flag]
+  "Gpx1" %in% names(gc_vec[t_flag])
+
   imm_exp_mat <- res.main$res.sep.mat$exp_mat_sep_list[[3]]
-  imm_tg_exp <- imm_exp_mat[, "Foxa1"]
+  imm_tg_exp <- imm_exp_mat[, "Gpx1"]
   plot_list <- c("B.cell-IgA", "B.cell-Immature")
   plot_flag <- annot_mat[, 3] %in% plot_list
   annot_mat_2 <- annot_mat
@@ -102,15 +112,16 @@ for (file_id in 1:1){
           geom_point(data = imm_exp_coord, aes(x = x_coord, y = y_coord, color = imm_tg_exp)) +
                     scale_color_viridis_c() +
           geom_point(data = iga_coord_2, aes(x = X, y = Y, fill = Cell_type),
-                    alpha = 0.6, color = "salmon") +
-          geom_point(data = oth_coord_2, aes(x = X, y = Y), alpha = 0.1) +
+                    color = "black", shape = "triangle") +
+          geom_point(data = oth_coord_2, aes(x = X, y = Y),
+                    color = "grey", alpha = 0.1, shape = "plus") +
           theme_bw() +
           theme(aspect.ratio = 1) +
-          ggtitle("Distribution of Foxa1 expression in B cell-Immature") +
+          ggtitle("Spatial distribution of Gpx1 expression in B cell-Immature") +
           xlab("X coordinate") +
           ylab("Y coordinate")
 
-  pdf(paste0(my_working_dir, "/results_CCPLS/Foxa1_orig.pdf"))
+  pdf(paste0(my_working_dir, "/results_CCPLS/Gpx1_orig.pdf"))
   plot(p)
   dev.off()
   
