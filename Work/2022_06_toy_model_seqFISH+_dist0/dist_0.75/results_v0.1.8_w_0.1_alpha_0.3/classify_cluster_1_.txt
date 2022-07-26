@@ -1,0 +1,4 @@
+[1] "SRG1 flag is FALSE"
+[1] "SRG2 flag is FALSE"
+[1] "SRG3 flag is FALSE"
+[1] "non-SRG flag is FALSE"

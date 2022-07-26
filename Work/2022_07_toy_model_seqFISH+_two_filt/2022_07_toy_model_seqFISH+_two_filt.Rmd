@@ -1,0 +1,357 @@
+---
+title: "CCPLS Development"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r}
+## Prepare
+rm(list = ls())
+setwd("~/CCPLS_paper/Work/2022_07_toy_model_seqFISH+_two_filt")
+```
+
+
+```{r}
+# Reading files
+my_working_dir <- "~/CCPLS_paper/Work/2022_07_toy_model_seqFISH+_two_filt"
+output_dir <- "/results_v0.1.8"
+
+source(paste0(my_working_dir, "/function/readSeqfishPlusData.R"))
+res.readSeqfishPlusData <- readSeqfishPlusData(my_working_dir)
+
+exp_mat_seqFISHplus <- res.readSeqfishPlusData$exp_mat
+annot_mat_seqFISHplus <- res.readSeqfishPlusData$annot_mat
+coord_mat_seqFISHplus <- res.readSeqfishPlusData$corrd_mat
+annot_score_mat_seqFISHplus <- res.readSeqfishPlusData$annot_score_mat
+gene_score_mat_seqFISHplus <- res.readSeqfishPlusData$gene_score_mat
+
+set.seed(1)
+exp_mat_l5 <- exp_mat_seqFISHplus[annot_mat_seqFISHplus[,3] == "L5 eNeuron",]
+seur_obj_l5 <- Seurat::CreateSeuratObject(counts = t(exp_mat_l5))
+seur_obj_l5 <- Seurat::NormalizeData(seur_obj_l5)
+seur_obj_l5 <- Seurat::FindVariableFeatures(seur_obj_l5, selection.method = "vst", nfeatures = 2000)
+HVG_flag_l5 <- seur_obj_l5@assays$RNA@meta.features[,"vst.variable"]
+HVG_list_l5 <- rownames(seur_obj_l5@assays$RNA@meta.features)[HVG_flag_l5]
+
+write.table(coord_mat_seqFISHplus[annot_mat_seqFISHplus[,3] == "L5 eNeuron",],
+            "~/CCPLS_paper/Work/2022_07_toy_model_seqFISH+_two_filt/simulated_data_5/coord_mat.tsv",
+            sep = "\t",
+            row.names = FALSE)
+
+# convert and save
+A_flag <- annot_mat_seqFISHplus[,3 ] == "L5 eNeuron"
+B_flag <- annot_mat_seqFISHplus[,3 ] == "L6 eNeuron"
+C_flag <- annot_mat_seqFISHplus[,3 ] == "Olig"
+D_flag <- !A_flag & !B_flag & !C_flag
+annot_mat_toy <- annot_mat_seqFISHplus
+annot_mat_toy[A_flag,3] <- "A"
+annot_mat_toy[B_flag,3] <- "B"
+annot_mat_toy[C_flag,3] <- "C"
+annot_mat_toy[D_flag,3] <- "D"
+
+# save annot_mat
+write.table(annot_mat_toy, file = "~/CCPLS_paper/Work/2022_07_toy_model_seqFISH+_two_filt/simulated_data_5/annot_mat_toy.tsv",
+sep = "\t",
+row.names = FALSE)
+
+# save coord_mat
+write.table(coord_mat_seqFISHplus, file = "~/CCPLS_paper/Work/2022_07_toy_model_seqFISH+_two_filt/simulated_data_5/coord_mat_toy.tsv",
+sep = "\t",
+row.names = FALSE)
+
+# for saving data
+ct_list <- unique(annot_mat_seqFISHplus[,3])
+
+output_exp_name <- paste0("~/CCPLS_paper/Work/2022_07_toy_model_seqFISH+_two_filt/seqFISH+_real_data/exp_mat_all.tsv") 
+output_coord_name <- paste0("~/CCPLS_paper/Work/2022_07_toy_model_seqFISH+_two_filt/seqFISH+_real_data/coord_mat_all.tsv") 
+output_annot_name <- paste0("~/CCPLS_paper/Work/2022_07_toy_model_seqFISH+_two_filt/seqFISH+_real_data/annot_mat_all.tsv") 
+write.table(exp_mat_seqFISHplus, output_exp_name, sep = "\t", row.names = FALSE)
+write.table(coord_mat_seqFISHplus, output_coord_name, sep = "\t", row.names = FALSE)
+write.table(annot_mat_seqFISHplus, output_annot_name, sep = "\t", row.names = FALSE)
+
+for (ct_ind in 1:length(ct_list)){
+ 
+  ct_flag <- annot_mat_seqFISHplus[,3] == ct_list[ct_ind]
+  
+  output_exp_data <- exp_mat_seqFISHplus[ct_flag,]
+  output_coord_data <- coord_mat_seqFISHplus[ct_flag,]
+  output_annot_data <- annot_mat_seqFISHplus[ct_flag,]
+  
+  output_exp_name <- paste0("~/CCPLS_paper/Work/2022_07_toy_model_seqFISH+_two_filt/seqFISH+_real_data/exp_mat_", ct_ind, ".tsv") 
+  
+  output_coord_name <- paste0("~/CCPLS_paper/Work/2022_07_toy_model_seqFISH+_two_filt/seqFISH+_real_data/coord_mat_", ct_ind, ".tsv") 
+  
+  output_annot_name <- paste0("~/CCPLS_paper/Work/2022_07_toy_model_seqFISH+_two_filt/seqFISH+_real_data/annot_mat_", ct_ind, ".tsv") 
+  
+  write.table(output_exp_data, output_exp_name, sep = "\t", row.names = FALSE)
+  write.table(output_coord_data, output_coord_name, sep = "\t", row.names = FALSE)
+  write.table(output_annot_data, output_annot_name, sep = "\t", row.names = FALSE)
+  
+}
+```
+
+```{r}
+library(ggplot2)
+
+coef_toy <- matrix(0, nrow = 4, ncol = 4)
+rownames(coef_toy) <- c("A", "B", "C", "D")
+colnames(coef_toy) <- c("DEG1", "DEG2", "DEG3", "non_DEG")
+
+## Perform experiment
+source(paste0(my_working_dir, "/function/performExperiment.R"))
+
+weight_const_vec <- c(0.1, 0.3, 1)
+e_g_i_const_vec <- c(0.1, 0.3, 1)
+output_dir_pre <- c("/results_v0.1.8")
+
+exp_num <- length(weight_const_vec) * length(e_g_i_const_vec)
+
+res.list <- vector("list", length = exp_num)
+
+loop_num <- 0
+
+for (weight_const_id in 1:3){
+  for (e_g_i_const_id in 1:3){
+   
+    loop_num <- loop_num + 1
+    
+    output_dir <- paste0(output_dir_pre,
+                         "_w_", weight_const_vec[weight_const_id],
+                         "_alpha_", e_g_i_const_vec[e_g_i_const_id])
+    print(output_dir)
+    res.list[[loop_num]] <- performExperiment(my_working_dir, output_dir,
+                                  weight_const = weight_const_vec[weight_const_id],
+                                  e_g_i_const = e_g_i_const_vec[e_g_i_const_id],
+                                  HVG_list_l5,
+                                  exp_mat_l5)
+    
+  }
+}
+
+# Save
+save.image("~/CCPLS_Paper/Work/2022_07_toy_model_seqFISH+_two_filt/results_collect/res.list.RData")
+
+# random case
+source(paste0(my_working_dir, "/function/performExperiment.R"))
+output_dir <- paste0(output_dir_pre, "_w_0_alpha_0")
+performExperiment(my_working_dir, output_dir, weight_const = 0, e_g_i_const = 0, HVG_list_l5, exp_mat_l5)
+```
+
+
+```{r}
+## Collect and report
+exp_vec <- c()
+pcc_all_vec <- c()
+ari_vec <- c()
+prec_srg1_vec <- c()
+prec_srg2_vec <- c()
+prec_srg3_vec <- c()
+prec_non_srg_vec <- c()
+rec_srg1_vec <- c()
+rec_srg2_vec <- c()
+rec_srg3_vec <- c()
+rec_non_srg_vec <- c()
+
+var_prop_mean_vec <- c()
+
+exp_id_list <- c(7, 8, 9, 4, 5, 6, 1, 2, 3)
+
+for (exp_id_pre in 1:exp_num){
+  exp_vec <- append(exp_vec, paste0("Condition ", exp_id_pre))
+  exp_id <- exp_id_list[exp_id_pre]
+  pcc_all_vec <- append(pcc_all_vec, res.list[[exp_id]]$pcc_all)
+  ari_vec <- append(ari_vec, res.list[[exp_id]]$ari)
+  prec_srg1_vec <- append(prec_srg1_vec, res.list[[exp_id]]$prec_srg1)
+  prec_srg2_vec <- append(prec_srg2_vec, res.list[[exp_id]]$prec_srg2)
+  prec_srg3_vec <- append(prec_srg3_vec, res.list[[exp_id]]$prec_srg3)
+  prec_non_srg_vec <- append(prec_non_srg_vec, res.list[[exp_id]]$prec_non_srg)
+  rec_srg1_vec <- append(rec_srg1_vec, res.list[[exp_id]]$rec_srg1)
+  rec_srg2_vec <- append(rec_srg2_vec, res.list[[exp_id]]$rec_srg2)
+  rec_srg3_vec <- append(rec_srg3_vec, res.list[[exp_id]]$rec_srg3)
+  rec_non_srg_vec <- append(rec_non_srg_vec, res.list[[exp_id]]$rec_non_srg)
+  
+  var_prop_mean_vec <- append(var_prop_mean_vec, res.list[[exp_id]]$var_prop_mean)
+}
+
+index_vec <- c("Pearson correlation coefficient", "Adjusted rand index",
+               "Precison of cluster 1", "Precision of cluster 2", "Precision of cluster 3", "Precision of cluster 4",
+                "Recall of cluster 1", "Recall of cluster 2", "Recall of cluster 3", "Recall of cluster 4")
+
+pcc_all_vec[is.na(pcc_all_vec)] <- 0
+prec_srg1_vec[is.na(prec_srg1_vec)] <- 0
+prec_srg2_vec[is.na(prec_srg2_vec)] <- 0
+prec_srg3_vec[is.na(prec_srg3_vec)] <- 0
+prec_non_srg_vec[is.na(prec_non_srg_vec)] <- 0
+rec_srg1_vec[is.na(rec_srg1_vec)] <- 0
+rec_srg2_vec[is.na(rec_srg2_vec)] <- 0
+rec_srg3_vec[is.na(rec_srg3_vec)] <- 0
+rec_non_srg_vec[is.na(rec_non_srg_vec)] <- 0
+
+pcc_all_vec %>% append(ari_vec) %>%
+            append(prec_srg1_vec) %>%
+            append(prec_srg2_vec) %>%
+            append(prec_srg3_vec) %>%
+            append(prec_non_srg_vec) %>%
+            append(rec_srg1_vec) %>%
+            append(rec_srg2_vec) %>%
+            append(rec_srg3_vec) %>%
+            append(rec_non_srg_vec) %>% as_tibble() -> res_df
+colnames(res_df) <- "Index"
+
+group_vec <- rep(paste0(seq(1:3), ". w = ", c("1", "0.3", "0.1")), each = 3)
+group_vec_2 <- rep(paste0(seq(1:3), ". alpha = ", c("0.1", "0.3", "1")), 3)
+
+res_df %>% cbind(rep(exp_vec, 10)) %>% 
+           cbind(rep(index_vec, each = exp_num)) %>%
+           cbind(rep(group_vec, 10)) %>%
+           cbind(rep(group_vec_2, 10)) -> res_df_2
+colnames(res_df_2) <- c("Index", "Condition", "Type", "Group", "Group_2")
+
+output_dir_collect <- "/results_collect"
+
+p_ind <- ggplot(res_df_2, aes(x = Group_2, y = Index, fill = Type)) +
+            geom_col(width = 0.5, position = "dodge") +
+            theme_bw() +
+            xlab("") +
+            scale_fill_brewer(palette = "Paired") +
+            theme(axis.text.x = element_text(size = 20, angle = 60, hjust = 1)) +
+            theme(axis.text.y = element_text(size = 20)) +
+            theme(axis.title.y = element_text(size = 20)) +
+            facet_wrap(~ Group) +
+            theme(strip.text = element_text(size = 20)) +
+            theme(strip.background = element_rect(fill = "white"))
+
+ggsave(paste0(my_working_dir, output_dir_collect, "/collected_index.png"),
+       plot = p_ind, width = 20)
+ggsave(paste0(my_working_dir, output_dir_collect, "/collected_index.pdf"),
+       plot = p_ind, width = 20)
+
+var_prop_mean_vec %>% as_tibble() -> res_df_3
+colnames(res_df_3) <- c("var_prop_mean")
+
+tmp <- rep(seq(1:3), 3)
+
+res_df_3 %>% cbind(exp_vec) %>% cbind(group_vec) %>% cbind(group_vec_2) %>% cbind(tmp) -> res_df_4
+colnames(res_df_4) <- c("var_prop_mean", "Condition", "Group", "Group_2", "Group_3")
+
+p_var_prop_mean <- ggplot(res_df_4, aes(x = Group_2, y = var_prop_mean, group = 1)) +
+                      geom_line() +
+                      geom_point(size = 3) +
+                      ylim(0, 1) +
+                      theme_bw() +
+                      xlab("") +
+                      ylab("Variance proportion") +
+                      theme(axis.text.x = element_text(size = 20, angle = 60, hjust = 1),
+                            axis.text.y = element_text(size = 20),
+                            axis.title.y = element_text(size = 20),
+                            panel.grid.major.y = element_blank(),
+                            panel.grid.minor.y = element_blank(),
+                            panel.grid.major.x = element_line(colour = "grey60", linetype = "dashed")) +
+                      facet_wrap(~ Group) +
+                      theme(strip.text = element_text(size = 20)) +
+                      theme(strip.background = element_rect(fill = "white"))
+
+ggsave(paste0(my_working_dir, output_dir_collect, "/collected_var_prop.png"),
+       plot = p_var_prop_mean, width = 14)
+ggsave(paste0(my_working_dir, output_dir_collect, "/collected_var_prop.pdf"),
+       plot = p_var_prop_mean, width = 14)
+```
+
+```{r}
+# Examine filtered genes
+fo_coef_vec_fet_neig_B <- readRDS(paste0(my_working_dir, "/results_v0.1.8_w_1_alpha_1/",
+                                         "fo_coef_vec_fet_neig_B.rds")) # filtered in step 2
+
+sig_coef_mat_raw <- readRDS(paste0(my_working_dir,
+                                   "/results_v0.1.8_w_1_alpha_1/sig_coef_mat_raw.rds"))
+sig_coef_mat_step_1 <- readRDS(paste0(my_working_dir,
+                                   "/results_v0.1.8_w_1_alpha_1/sig_coef_mat_step_1.rds"))
+sig_coef_mat_step_2 <- readRDS(paste0(my_working_dir,
+                                   "/results_v0.1.8_w_1_alpha_1/sig_coef_mat_step_2.rds"))
+
+step_1_flag <- sig_coef_mat_step_1[2,] == 0
+step_2_flag <- sig_coef_mat_step_1[2,] != 0 & sig_coef_mat_step_2[2,] == 0
+rem_flag <- sig_coef_mat_step_2[2,] > 0
+
+df_coef_1 <- cbind(sig_coef_mat_raw[2, step_1_flag], "1. First filtered")
+colnames(df_coef_1) <- c("Coefficient", "Type")
+df_coef_1 <- as_tibble(df_coef_1)
+df_coef_1$Coefficient <- as.double(df_coef_1$Coefficient)
+
+p_hist_1 <- ggplot(as_tibble(df_coef_1), aes(x = Coefficient, fill = Type)) +
+              geom_histogram(alpha = 0.8, color = "Green") +
+              theme(panel.grid.minor = element_blank()) +
+              theme_bw()
+
+df_coef_2 <- cbind(sig_coef_mat_raw[2, step_2_flag], "2. Second filtered")
+colnames(df_coef_2) <- c("Coefficient", "Type")
+df_coef_2 <- as_tibble(df_coef_2)
+df_coef_2$Coefficient <- as.double(df_coef_2$Coefficient)
+
+p_hist_2 <- ggplot(as_tibble(df_coef_2), aes(x = Coefficient, fill = Type)) +
+              geom_histogram(alpha = 0.8) +
+              theme(panel.grid.minor = element_blank()) +
+              theme_bw()
+
+df_coef_3 <- cbind(sig_coef_mat_raw[2, rem_flag], "3. Passed")
+colnames(df_coef_3) <- c("Coefficient", "Type")
+df_coef_3 <- as_tibble(df_coef_3)
+df_coef_3$Coefficient <- as.double(df_coef_3$Coefficient)
+
+p_hist_3 <- ggplot(as_tibble(df_coef_3), aes(x = Coefficient, fill = Type)) +
+              geom_histogram(alpha = 0.8) +
+              theme(panel.grid.minor = element_blank()) +
+              theme_bw()
+
+df_sum <- rbind(df_coef_1, df_coef_2)
+df_sum <- rbind(df_sum, df_coef_3)
+
+p_hist <- ggplot(df_sum, aes(x = Coefficient, fill = Type)) +
+              geom_histogram() +
+              theme(panel.grid.minor = element_blank()) +
+              theme_bw() +
+              facet_wrap(Type ~ ., ncol = 1)
+
+ggsave(paste0(my_working_dir,
+              "/results_v0.1.8_w_1_alpha_1/histogram.png"),
+       p_hist, width = 12, height = 8)
+
+
+ans_1_pre <- read.table(paste0(my_working_dir, "/answer_gene/cluster_1.txt"))
+ans_2_pre <- read.table(paste0(my_working_dir, "/answer_gene/cluster_2.txt"))
+ans_3_pre <- read.table(paste0(my_working_dir, "/answer_gene/cluster_3.txt"))
+ans_4_pre <- read.table(paste0(my_working_dir, "/answer_gene/cluster_4.txt"))
+
+ans_1 <- ans_1_pre[, 1]
+ans_2 <- ans_2_pre[, 1]
+ans_3 <- ans_3_pre[, 1]
+ans_4 <- ans_4_pre[, 1]
+
+fo_1 <- names(fo_coef_vec_fet_neig_B)[names(fo_coef_vec_fet_neig_B) %in% ans_1]
+fo_2 <- names(fo_coef_vec_fet_neig_B)[names(fo_coef_vec_fet_neig_B) %in% ans_2]
+fo_3 <- names(fo_coef_vec_fet_neig_B)[names(fo_coef_vec_fet_neig_B) %in% ans_3]
+fo_4 <- names(fo_coef_vec_fet_neig_B)[names(fo_coef_vec_fet_neig_B) %in% ans_4]
+
+sum(names(step_1_flag)[step_1_flag] %in% ans_2)
+sum(names(step_2_flag)[step_2_flag] %in% ans_2)
+sum(names(rem_flag)[rem_flag] %in% ans_2)
+
+length(fo_coef_vec_fet_neig_B)
+sum(fo_coef_vec_fet_neig_B)
+mean(fo_coef_vec_fet_neig_B)
+max(fo_coef_vec_fet_neig_B)
+min(fo_coef_vec_fet_neig_B)
+```
+
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+

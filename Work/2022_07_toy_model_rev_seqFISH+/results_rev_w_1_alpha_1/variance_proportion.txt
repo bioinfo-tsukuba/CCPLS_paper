@@ -1,0 +1,1 @@
+[1] "Variance proportion is 0.409079188701031"

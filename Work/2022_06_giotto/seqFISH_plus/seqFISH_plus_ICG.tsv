@@ -1,0 +1,863 @@
+"1"	"Hspa2"	"L2/3 eNeuron"	"L2/3 eNeuron"	2.68753198501383
+"2"	"Lrp11"	"L2/3 eNeuron"	"L2/3 eNeuron"	2.65492999405885
+"3"	"Nap1l4"	"L2/3 eNeuron"	"L2/3 eNeuron"	2.43842330811277
+"4"	"Bag5"	"L2/3 eNeuron"	"L2/3 eNeuron"	2.15082039376192
+"5"	"Dcaf5"	"L2/3 eNeuron"	"L2/3 eNeuron"	2.0371141081413
+"6"	"Gsg1l"	"L2/3 eNeuron"	"L2/3 eNeuron"	1.98581754171991
+"7"	"Fxr2"	"L2/3 eNeuron"	"L2/3 eNeuron"	1.83467133889683
+"8"	"Prkcz"	"L2/3 eNeuron"	"L2/3 eNeuron"	1.7890217820797
+"9"	"Stard8"	"L2/3 eNeuron"	"L2/3 eNeuron"	1.78820862354025
+"10"	"Sowaha"	"L2/3 eNeuron"	"L2/3 eNeuron"	1.7713584097779
+"11"	"Lamp5"	"L2/3 eNeuron"	"L2/3 eNeuron"	1.62023319312933
+"12"	"Cap1"	"L2/3 eNeuron"	"L2/3 eNeuron"	1.55888362053943
+"13"	"Ntrk3"	"L2/3 eNeuron"	"L2/3 eNeuron"	1.55313951033679
+"14"	"Erf"	"L2/3 eNeuron"	"L2/3 eNeuron"	1.50489566751308
+"15"	"Senp3"	"L2/3 eNeuron"	"L2/3 eNeuron"	1.49630651483867
+"16"	"Tspyl1"	"L2/3 eNeuron"	"L2/3 eNeuron"	1.44613241137817
+"17"	"Agps"	"Adarb2 iNeuron"	"L2/3 eNeuron"	2.1969151145739
+"18"	"Atf3"	"Adarb2 iNeuron"	"L2/3 eNeuron"	2.07675388743424
+"19"	"Pcdh8"	"Lhx6 iNeuron"	"L2/3 eNeuron"	2.19983411271159
+"20"	"Gnl2"	"Lhx6 iNeuron"	"L2/3 eNeuron"	1.73851393979271
+"21"	"Fam3a"	"Lhx6 iNeuron"	"L2/3 eNeuron"	1.68751674715142
+"22"	"Amer3"	"Lhx6 iNeuron"	"L2/3 eNeuron"	1.60033434291825
+"23"	"Sun1"	"Lhx6 iNeuron"	"L2/3 eNeuron"	1.58070770153771
+"24"	"Nefm"	"L4 eNeuron"	"L2/3 eNeuron"	1.46732886430868
+"25"	"Enpp2"	"L4 eNeuron"	"L2/3 eNeuron"	1.33433680827885
+"26"	"Igfbp4"	"L4 eNeuron"	"L2/3 eNeuron"	1.2274205133836
+"27"	"Lamp5"	"L4 eNeuron"	"L2/3 eNeuron"	1.22090452467454
+"28"	"Rrnad1"	"L2/3 eNeuron"	"astrocytes"	2.46967959912867
+"29"	"Mesp2"	"L2/3 eNeuron"	"astrocytes"	2.21584731491131
+"30"	"Fibin"	"L2/3 eNeuron"	"astrocytes"	2.08709443975915
+"31"	"Lnpep"	"L2/3 eNeuron"	"astrocytes"	1.96704551435366
+"32"	"Bbx"	"L2/3 eNeuron"	"astrocytes"	1.96609466283416
+"33"	"Camk4"	"L2/3 eNeuron"	"astrocytes"	1.95613259475227
+"34"	"Spry3"	"L2/3 eNeuron"	"astrocytes"	1.89146025991112
+"35"	"Cers6"	"L2/3 eNeuron"	"astrocytes"	1.82213691880509
+"36"	"Gckr"	"L2/3 eNeuron"	"astrocytes"	1.82092388628096
+"37"	"Sema6c"	"L2/3 eNeuron"	"astrocytes"	1.81611664008657
+"38"	"Mdga1"	"L2/3 eNeuron"	"astrocytes"	1.7804720815854
+"39"	"Pik3r1"	"L2/3 eNeuron"	"astrocytes"	1.74034014772692
+"40"	"Fzr1"	"L2/3 eNeuron"	"astrocytes"	1.74022100707994
+"41"	"Zwilch"	"L2/3 eNeuron"	"astrocytes"	1.70296649408293
+"42"	"Brf1"	"L2/3 eNeuron"	"astrocytes"	1.69908646027893
+"43"	"Sash1"	"L2/3 eNeuron"	"astrocytes"	1.68696702234421
+"44"	"Kcnk13"	"L2/3 eNeuron"	"astrocytes"	1.67558756268177
+"45"	"Tspan14"	"L2/3 eNeuron"	"astrocytes"	1.61164065808541
+"46"	"Stk11ip"	"L2/3 eNeuron"	"astrocytes"	1.60704792715458
+"47"	"Eif4e"	"L2/3 eNeuron"	"astrocytes"	1.60551384826754
+"48"	"Klhl33"	"L2/3 eNeuron"	"astrocytes"	1.60103530765517
+"49"	"Myh14"	"L2/3 eNeuron"	"astrocytes"	1.58399301540131
+"50"	"Cstf1"	"L2/3 eNeuron"	"astrocytes"	1.55474123214896
+"51"	"Abcg4"	"L2/3 eNeuron"	"astrocytes"	1.53397037370824
+"52"	"Osbpl5"	"L2/3 eNeuron"	"astrocytes"	1.446773440753
+"53"	"Ngb"	"L2/3 eNeuron"	"astrocytes"	1.4456181905712
+"54"	"Rbm33"	"L2/3 eNeuron"	"astrocytes"	1.42922178686721
+"55"	"Tmem175"	"astrocytes"	"L2/3 eNeuron"	3.6842369591921
+"56"	"Rps6kc1"	"astrocytes"	"L2/3 eNeuron"	3.28547769000905
+"57"	"Ptpro"	"astrocytes"	"L2/3 eNeuron"	2.913025850676
+"58"	"Atxn1"	"astrocytes"	"L2/3 eNeuron"	2.88552298657957
+"59"	"Rnf144b"	"astrocytes"	"L2/3 eNeuron"	2.7482606643241
+"60"	"Wdr19"	"astrocytes"	"L2/3 eNeuron"	2.73300967359295
+"61"	"Cog2"	"astrocytes"	"L2/3 eNeuron"	2.601403609726
+"62"	"Stard5"	"astrocytes"	"L2/3 eNeuron"	2.57453653190109
+"63"	"Gm11545"	"astrocytes"	"L2/3 eNeuron"	2.57341173758227
+"64"	"Acin1"	"astrocytes"	"L2/3 eNeuron"	2.5658335982655
+"65"	"Hs3st5"	"astrocytes"	"L2/3 eNeuron"	2.51248344471846
+"66"	"Zbtb42"	"astrocytes"	"L2/3 eNeuron"	2.49375163924704
+"67"	"Thsd1"	"astrocytes"	"L2/3 eNeuron"	2.48826135590099
+"68"	"Hhipl1"	"astrocytes"	"L2/3 eNeuron"	2.46123357775326
+"69"	"Golga4"	"astrocytes"	"L2/3 eNeuron"	2.34803857398252
+"70"	"Clrn3"	"astrocytes"	"L2/3 eNeuron"	2.34536040113426
+"71"	"Pnpla7"	"astrocytes"	"L2/3 eNeuron"	2.3229854163391
+"72"	"Dnah1"	"astrocytes"	"L2/3 eNeuron"	2.27524483818261
+"73"	"Adar"	"astrocytes"	"L2/3 eNeuron"	2.23382589029303
+"74"	"Arhgap1"	"astrocytes"	"L2/3 eNeuron"	2.19729545658717
+"75"	"Sumo3"	"astrocytes"	"L2/3 eNeuron"	2.19028753207812
+"76"	"Dus1l"	"astrocytes"	"L4 eNeuron"	2.77104326745166
+"77"	"Fga"	"astrocytes"	"L4 eNeuron"	2.72342265627741
+"78"	"Tada3"	"astrocytes"	"L4 eNeuron"	2.45258863968185
+"79"	"Kirrel2"	"astrocytes"	"L4 eNeuron"	2.43427627220478
+"80"	"Kdm4c"	"astrocytes"	"L4 eNeuron"	2.26506705105752
+"81"	"P4hb"	"microglia"	"astrocytes"	4.72783719786055
+"82"	"Tln1"	"microglia"	"astrocytes"	4.68910137330608
+"83"	"Cinp"	"microglia"	"astrocytes"	4.6291911318434
+"84"	"Myh11"	"microglia"	"astrocytes"	4.41037338444323
+"85"	"Slc7a5"	"microglia"	"astrocytes"	4.27213387867589
+"86"	"Ankrd34a"	"microglia"	"astrocytes"	3.98705483297468
+"87"	"Dio2"	"microglia"	"astrocytes"	3.98705483297468
+"88"	"Tpp2"	"astrocytes"	"microglia"	3.87094078476731
+"89"	"Abhd13"	"astrocytes"	"microglia"	3.76680861274535
+"90"	"Lrrc32"	"astrocytes"	"microglia"	3.65004843494161
+"91"	"Lrrc63"	"astrocytes"	"microglia"	3.00531520337461
+"92"	"Olfml3"	"astrocytes"	"microglia"	3.00362084808564
+"93"	"Arsb"	"astrocytes"	"microglia"	2.96781794116291
+"94"	"Gpr183"	"astrocytes"	"microglia"	2.91979406870997
+"95"	"Tmem183a"	"astrocytes"	"microglia"	2.90353108379914
+"96"	"Trpm1"	"astrocytes"	"microglia"	2.80959280358695
+"97"	"Tinf2"	"astrocytes"	"microglia"	2.68915154306731
+"98"	"Spint1"	"astrocytes"	"microglia"	2.55081466385381
+"99"	"Tdh"	"astrocytes"	"microglia"	2.53318046176547
+"100"	"Flt4"	"astrocytes"	"microglia"	2.51192278365223
+"101"	"Dido1"	"astrocytes"	"microglia"	2.50158030211346
+"102"	"Ak4"	"astrocytes"	"microglia"	2.3847968182221
+"103"	"Slc9a8"	"astrocytes"	"microglia"	2.30975619217381
+"104"	"Syt17"	"endothelial"	"L2/3 eNeuron"	3.61383393309591
+"105"	"Arhgef15"	"endothelial"	"L2/3 eNeuron"	3.11197999590931
+"106"	"Lrrc8e"	"endothelial"	"L2/3 eNeuron"	2.96479644019727
+"107"	"Qsox1"	"endothelial"	"L2/3 eNeuron"	2.45074795170806
+"108"	"Sh3bp5"	"endothelial"	"L2/3 eNeuron"	2.4097816268243
+"109"	"Klhdc8b"	"endothelial"	"L2/3 eNeuron"	2.39398990191938
+"110"	"Zcchc11"	"endothelial"	"L2/3 eNeuron"	2.36641183616448
+"111"	"Prpf19"	"endothelial"	"L2/3 eNeuron"	2.35248048031054
+"112"	"Abca3"	"endothelial"	"L2/3 eNeuron"	2.3509947573834
+"113"	"Vegfa"	"endothelial"	"L2/3 eNeuron"	2.25440572865089
+"114"	"Ndp"	"endothelial"	"L2/3 eNeuron"	2.24169400946894
+"115"	"Ppfibp1"	"endothelial"	"L2/3 eNeuron"	2.24151626355457
+"116"	"Chpf2"	"endothelial"	"L2/3 eNeuron"	2.22699478851046
+"117"	"Rnpepl1"	"L2/3 eNeuron"	"endothelial"	1.58875275322971
+"118"	"Ksr1"	"L2/3 eNeuron"	"endothelial"	1.55030308583507
+"119"	"Pcgf2"	"L2/3 eNeuron"	"endothelial"	1.50194245237664
+"120"	"Csf1r"	"L2/3 eNeuron"	"endothelial"	1.44587770528805
+"121"	"Mon1a"	"L2/3 eNeuron"	"endothelial"	1.42440287732217
+"122"	"Mgat5b"	"L4 eNeuron"	"L4 eNeuron"	1.94797278970396
+"123"	"Dusp8"	"L4 eNeuron"	"L4 eNeuron"	1.78870555057776
+"124"	"Kcnc3"	"L4 eNeuron"	"L4 eNeuron"	1.54548203302343
+"125"	"Arhgap39"	"L4 eNeuron"	"L4 eNeuron"	1.32003957369002
+"126"	"Hs6st3"	"L4 eNeuron"	"L4 eNeuron"	1.20255840030233
+"127"	"Nlrc5"	"Adarb2 iNeuron"	"L4 eNeuron"	3.0586225708058
+"128"	"Gpatch2"	"Adarb2 iNeuron"	"L4 eNeuron"	2.76543794515531
+"129"	"Lgr5"	"Adarb2 iNeuron"	"L4 eNeuron"	2.55202799954331
+"130"	"Tmem39a"	"Adarb2 iNeuron"	"L4 eNeuron"	2.5449660593676
+"131"	"Synpo2"	"Adarb2 iNeuron"	"L4 eNeuron"	2.51820100246424
+"132"	"Magee2"	"Adarb2 iNeuron"	"L4 eNeuron"	2.30840988599976
+"133"	"Kcnj14"	"Adarb2 iNeuron"	"L4 eNeuron"	2.24961659590311
+"134"	"Rtp1"	"Adarb2 iNeuron"	"L4 eNeuron"	2.0455505048805
+"135"	"Tapbp"	"Adarb2 iNeuron"	"L4 eNeuron"	2.01291658274999
+"136"	"Aloxe3"	"Adarb2 iNeuron"	"L4 eNeuron"	1.9962944523047
+"137"	"Abhd15"	"L4 eNeuron"	"Adarb2 iNeuron"	1.20228793834057
+"138"	"Snx4"	"OPC"	"OPC"	3.67907666488865
+"139"	"Plcl1"	"OPC"	"OPC"	2.84133202601478
+"140"	"Cntn2"	"OPC"	"OPC"	2.6990858644801
+"141"	"Ccdc88b"	"L2/3 eNeuron"	"OPC"	2.29581410160434
+"142"	"Mtrf1"	"L2/3 eNeuron"	"OPC"	1.99624853284398
+"143"	"Lepr"	"L2/3 eNeuron"	"OPC"	1.98240977661092
+"144"	"Ptgs2"	"L2/3 eNeuron"	"OPC"	1.96983755089952
+"145"	"Foxo1"	"L2/3 eNeuron"	"OPC"	1.92360543238833
+"146"	"Alox8"	"L2/3 eNeuron"	"OPC"	1.8767994584774
+"147"	"Fam198a"	"L2/3 eNeuron"	"OPC"	1.79662344073992
+"148"	"Lin28b"	"L2/3 eNeuron"	"OPC"	1.78157485594758
+"149"	"Insig1"	"L2/3 eNeuron"	"OPC"	1.75936035782762
+"150"	"Zbtb14"	"L2/3 eNeuron"	"OPC"	1.68794069394175
+"151"	"Bag2"	"L2/3 eNeuron"	"OPC"	1.68388390803609
+"152"	"Dact1"	"L2/3 eNeuron"	"OPC"	1.65540098409299
+"153"	"Safb2"	"L2/3 eNeuron"	"OPC"	1.60648950530775
+"154"	"Aox3"	"L2/3 eNeuron"	"OPC"	1.54961858160271
+"155"	"Gm2a"	"L2/3 eNeuron"	"OPC"	1.54158055122469
+"156"	"Lix1"	"L2/3 eNeuron"	"OPC"	1.46951618195177
+"157"	"Pnlip"	"L2/3 eNeuron"	"OPC"	1.42601779458526
+"158"	"Phkb"	"OPC"	"L2/3 eNeuron"	4.06028767114318
+"159"	"Samhd1"	"OPC"	"L2/3 eNeuron"	3.71257788988731
+"160"	"Fam83d"	"OPC"	"L2/3 eNeuron"	3.23205564481953
+"161"	"Dusp16"	"OPC"	"L2/3 eNeuron"	2.91621069132568
+"162"	"Fam198a"	"endothelial"	"Lhx6 iNeuron"	3.75294538058277
+"163"	"Fam13a"	"endothelial"	"Lhx6 iNeuron"	3.54174417524592
+"164"	"Zcchc12"	"endothelial"	"Lhx6 iNeuron"	2.80565386879119
+"165"	"Jakmip1"	"endothelial"	"Lhx6 iNeuron"	2.67537707149447
+"166"	"Tpst2"	"endothelial"	"Lhx6 iNeuron"	2.27343002026925
+"167"	"Pygm"	"mural"	"Lhx6 iNeuron"	4.98164920644946
+"168"	"Tpcn1"	"mural"	"Lhx6 iNeuron"	4.98164920644946
+"169"	"Helz"	"mural"	"Lhx6 iNeuron"	4.88506329630043
+"170"	"Zcchc14"	"Lhx6 iNeuron"	"mural"	2.6106103659006
+"171"	"Kdm8"	"Lhx6 iNeuron"	"mural"	2.31742043916747
+"172"	"Slc25a34"	"Lhx6 iNeuron"	"mural"	2.20508055424343
+"173"	"Gpr141"	"Lhx6 iNeuron"	"mural"	1.98372200297147
+"174"	"Bag2"	"Lhx6 iNeuron"	"mural"	1.8872237290689
+"175"	"Rhobtb1"	"Lhx6 iNeuron"	"mural"	1.86356844530334
+"176"	"Errfi1"	"Lhx6 iNeuron"	"mural"	1.85262336444568
+"177"	"Arfgap2"	"Lhx6 iNeuron"	"mural"	1.795786767491
+"178"	"Mex3d"	"Lhx6 iNeuron"	"mural"	1.78667449345357
+"179"	"Syna"	"Lhx6 iNeuron"	"mural"	1.77658912072574
+"180"	"St8sia6"	"Lhx6 iNeuron"	"mural"	1.74005749037842
+"181"	"Fam104a"	"Lhx6 iNeuron"	"mural"	1.67875352131936
+"182"	"Shmt1"	"Lhx6 iNeuron"	"mural"	1.64115747360666
+"183"	"Strn4"	"Lhx6 iNeuron"	"mural"	1.63265442681529
+"184"	"Fam169b"	"Lhx6 iNeuron"	"mural"	1.62865040371574
+"185"	"Pkhd1"	"Lhx6 iNeuron"	"mural"	1.62723441373698
+"186"	"Plagl1"	"Lhx6 iNeuron"	"mural"	1.59751094660077
+"187"	"Adipor2"	"Adarb2 iNeuron"	"Adarb2 iNeuron"	2.75327885457733
+"188"	"Decr1"	"Adarb2 iNeuron"	"Adarb2 iNeuron"	2.33629790345209
+"189"	"Fam83h"	"Adarb2 iNeuron"	"Adarb2 iNeuron"	2.32437893853963
+"190"	"Trib2"	"Adarb2 iNeuron"	"Adarb2 iNeuron"	2.19025363608633
+"191"	"Gm18409"	"Adarb2 iNeuron"	"Adarb2 iNeuron"	2.13908126029129
+"192"	"Fbxl4"	"Adarb2 iNeuron"	"Adarb2 iNeuron"	2.10868046839096
+"193"	"Ccdc71"	"Adarb2 iNeuron"	"Adarb2 iNeuron"	2.03817075000304
+"194"	"Gsdmcl.ps"	"astrocytes"	"Adarb2 iNeuron"	3.7101884657647
+"195"	"Clcnka"	"astrocytes"	"Adarb2 iNeuron"	3.5596474213286
+"196"	"Agmat"	"astrocytes"	"Adarb2 iNeuron"	3.54546100344259
+"197"	"Mcm3"	"astrocytes"	"Adarb2 iNeuron"	3.06699025219976
+"198"	"Nup107"	"astrocytes"	"Adarb2 iNeuron"	2.98024094129033
+"199"	"Hs3st3b1"	"astrocytes"	"Adarb2 iNeuron"	2.9502358440841
+"200"	"Leng1"	"astrocytes"	"Adarb2 iNeuron"	2.93670066704064
+"201"	"Ccnd1"	"astrocytes"	"Adarb2 iNeuron"	2.63000053808695
+"202"	"Cyp4v3"	"astrocytes"	"Adarb2 iNeuron"	2.53704061383076
+"203"	"Rab8a"	"astrocytes"	"Adarb2 iNeuron"	2.48606702295711
+"204"	"Plin2"	"astrocytes"	"Adarb2 iNeuron"	2.19938812890862
+"205"	"Pitrm1"	"Adarb2 iNeuron"	"astrocytes"	3.04130506409353
+"206"	"Arhgap19"	"Adarb2 iNeuron"	"astrocytes"	2.82044038747563
+"207"	"Dcaf11"	"Adarb2 iNeuron"	"astrocytes"	2.69925278855494
+"208"	"Ripk1"	"Adarb2 iNeuron"	"astrocytes"	2.54351623942176
+"209"	"Lzts2"	"Adarb2 iNeuron"	"astrocytes"	2.1125137115599
+"210"	"Zc3h12c"	"endothelial"	"OPC"	3.93528113118127
+"211"	"Dhx57"	"endothelial"	"OPC"	3.65483090862272
+"212"	"Pcf11"	"endothelial"	"OPC"	3.39343328130618
+"213"	"Sltm"	"endothelial"	"OPC"	3.34064336400822
+"214"	"Uggt1"	"endothelial"	"OPC"	3.26203156966155
+"215"	"Hc"	"endothelial"	"OPC"	3.15621818643461
+"216"	"Gpat2"	"endothelial"	"OPC"	3.04400695194266
+"217"	"Psmf1"	"endothelial"	"OPC"	2.9475614862618
+"218"	"Clec16a"	"endothelial"	"OPC"	2.79028356385451
+"219"	"Htr7"	"endothelial"	"OPC"	2.75159851745522
+"220"	"Rab2b"	"endothelial"	"OPC"	2.65026233415784
+"221"	"Prkg2"	"endothelial"	"OPC"	2.59024405288434
+"222"	"Prickle3"	"endothelial"	"OPC"	2.41373605589248
+"223"	"Tbk1"	"endothelial"	"OPC"	2.35340657555098
+"224"	"Cdc42ep3"	"endothelial"	"OPC"	2.33255927521427
+"225"	"Zfp598"	"endothelial"	"OPC"	2.31928850920462
+"226"	"Eif4enif1"	"Adarb2 iNeuron"	"endothelial"	2.92299330441574
+"227"	"Slc4a9"	"Adarb2 iNeuron"	"endothelial"	2.64597755592102
+"228"	"Eno4"	"Adarb2 iNeuron"	"endothelial"	2.46905920014781
+"229"	"Phldb3"	"Adarb2 iNeuron"	"endothelial"	2.21139160903508
+"230"	"Kctd18"	"Adarb2 iNeuron"	"endothelial"	2.10773847818097
+"231"	"Gtf2e1"	"Adarb2 iNeuron"	"endothelial"	2.10745693266051
+"232"	"Sprtn"	"Adarb2 iNeuron"	"endothelial"	1.99843668894141
+"233"	"Cdca4"	"endothelial"	"Adarb2 iNeuron"	4.10613764309113
+"234"	"Tlr8"	"endothelial"	"Adarb2 iNeuron"	3.05769360598403
+"235"	"Trmt1l"	"endothelial"	"Adarb2 iNeuron"	3.01038028785544
+"236"	"Eogt"	"endothelial"	"Adarb2 iNeuron"	2.91050248125972
+"237"	"Sox10"	"endothelial"	"Adarb2 iNeuron"	2.36191859414851
+"238"	"Kcna2"	"endothelial"	"Adarb2 iNeuron"	2.3421741758092
+"239"	"Cul1"	"endothelial"	"Adarb2 iNeuron"	2.33647060219714
+"240"	"Col11a2"	"astrocytes"	"endothelial"	2.64593160143055
+"241"	"Spns1"	"astrocytes"	"endothelial"	2.2151264565438
+"242"	"Dr1"	"endothelial"	"astrocytes"	2.59795179660396
+"243"	"Ptprn2"	"endothelial"	"astrocytes"	2.41242528525121
+"244"	"Smpd1"	"endothelial"	"astrocytes"	2.39306508348777
+"245"	"Tex19.2"	"endothelial"	"L4 eNeuron"	3.746152096036
+"246"	"Fam160b1"	"endothelial"	"L4 eNeuron"	3.51134880142564
+"247"	"Tmem199"	"endothelial"	"L4 eNeuron"	3.29580135130537
+"248"	"Slc24a3"	"endothelial"	"L4 eNeuron"	3.18944785088564
+"249"	"Fam126b"	"endothelial"	"L4 eNeuron"	3.08772352203379
+"250"	"Dact2"	"endothelial"	"L4 eNeuron"	2.89959768657386
+"251"	"Mab21l1"	"endothelial"	"L4 eNeuron"	2.73549529533023
+"252"	"Zfp597"	"endothelial"	"L4 eNeuron"	2.50808583847364
+"253"	"Prdm12"	"endothelial"	"L4 eNeuron"	2.50710498529112
+"254"	"Rtn4rl1"	"endothelial"	"L4 eNeuron"	2.39484785043026
+"255"	"Slc39a8"	"endothelial"	"L4 eNeuron"	2.31733268781911
+"256"	"Grm2"	"endothelial"	"L4 eNeuron"	2.27318174392406
+"257"	"Rnf150"	"L4 eNeuron"	"L5 eNeuron"	1.55648458198406
+"258"	"Sstr4"	"L4 eNeuron"	"L5 eNeuron"	1.43446891227245
+"259"	"Aldh1l1"	"L4 eNeuron"	"L5 eNeuron"	1.38729076621366
+"260"	"E2f1"	"L4 eNeuron"	"L5 eNeuron"	1.3325366715747
+"261"	"Gng4"	"L4 eNeuron"	"L5 eNeuron"	1.32257139767845
+"262"	"Mmrn1"	"L4 eNeuron"	"L5 eNeuron"	1.23198935424541
+"263"	"Il2ra"	"L4 eNeuron"	"L5 eNeuron"	1.19414962996115
+"264"	"Cchcr1"	"Lhx6 iNeuron"	"L4 eNeuron"	1.85855782262162
+"265"	"Cab39l"	"Lhx6 iNeuron"	"L4 eNeuron"	1.67376945435558
+"266"	"Wdsub1"	"Lhx6 iNeuron"	"L4 eNeuron"	1.61980011620946
+"267"	"Fam20c"	"Lhx6 iNeuron"	"L4 eNeuron"	1.61203551179874
+"268"	"Bak1"	"L4 eNeuron"	"Lhx6 iNeuron"	1.25370759563268
+"269"	"Sh3bp4"	"L4 eNeuron"	"Lhx6 iNeuron"	1.20863413191016
+"270"	"Nell1"	"L5 eNeuron"	"L5 eNeuron"	1.56190433168639
+"271"	"Satb1"	"L5 eNeuron"	"L5 eNeuron"	1.43425278422527
+"272"	"Clstn2"	"L5 eNeuron"	"L5 eNeuron"	1.38591991029389
+"273"	"Ptprt"	"L5 eNeuron"	"L5 eNeuron"	1.36584320856669
+"274"	"Prcc"	"L5 eNeuron"	"L5 eNeuron"	1.20233120245477
+"275"	"Ptk2"	"L5 eNeuron"	"L5 eNeuron"	1.16596815434211
+"276"	"Adam22"	"L5 eNeuron"	"L5 eNeuron"	1.14805836326741
+"277"	"Actn4"	"L5 eNeuron"	"L5 eNeuron"	1.03251821683489
+"278"	"Mapk9"	"Lhx6 iNeuron"	"L5 eNeuron"	1.86899001843573
+"279"	"Fads1"	"Lhx6 iNeuron"	"L5 eNeuron"	1.83336540737429
+"280"	"Rps6kl1"	"Lhx6 iNeuron"	"L5 eNeuron"	1.68874439797321
+"281"	"Stc1"	"Lhx6 iNeuron"	"L5 eNeuron"	1.61300899137669
+"282"	"Clip1"	"L5 eNeuron"	"Lhx6 iNeuron"	1.14168820613305
+"283"	"Pabpc2"	"OPC"	"L5 eNeuron"	4.13200811377432
+"284"	"Enpp1"	"OPC"	"L5 eNeuron"	3.95446083102369
+"285"	"Stat3"	"OPC"	"L5 eNeuron"	3.92538935183179
+"286"	"Lig3"	"OPC"	"L5 eNeuron"	3.91856352043867
+"287"	"Pwp2"	"OPC"	"L5 eNeuron"	3.83612568170928
+"288"	"Scaf4"	"OPC"	"L5 eNeuron"	3.83612568170928
+"289"	"Wdr64"	"OPC"	"L5 eNeuron"	3.83612568170928
+"290"	"Fam189b"	"OPC"	"L5 eNeuron"	3.76910006595185
+"291"	"Nat10"	"OPC"	"L5 eNeuron"	3.72263287371071
+"292"	"Pitpnc1"	"OPC"	"L5 eNeuron"	3.72263287371071
+"293"	"Blm"	"OPC"	"L5 eNeuron"	3.53647650125219
+"294"	"Nap1l3"	"OPC"	"L5 eNeuron"	3.53647650125219
+"295"	"Pygo1"	"OPC"	"L5 eNeuron"	3.53647650125219
+"296"	"Chd6"	"OPC"	"L5 eNeuron"	3.19655543025467
+"297"	"Col11a1"	"OPC"	"L5 eNeuron"	3.12804839114415
+"298"	"Tns4"	"OPC"	"L5 eNeuron"	3.11615945981565
+"299"	"Fzd1"	"OPC"	"L5 eNeuron"	3.06858839798159
+"300"	"Stk17b"	"OPC"	"L5 eNeuron"	3.01900814750404
+"301"	"Ggnbp2"	"OPC"	"L5 eNeuron"	2.90835199653131
+"302"	"Kdelc1"	"OPC"	"L5 eNeuron"	2.84809987776035
+"303"	"Chd5"	"OPC"	"L5 eNeuron"	2.62880902313695
+"304"	"Acsm2"	"L5 eNeuron"	"OPC"	1.79276107413677
+"305"	"Pdpr"	"L5 eNeuron"	"OPC"	1.75049716509056
+"306"	"Zkscan4"	"L5 eNeuron"	"OPC"	1.58166122437249
+"307"	"Nob1"	"L5 eNeuron"	"OPC"	1.48274945550278
+"308"	"Coq10a"	"L5 eNeuron"	"OPC"	1.44777103593003
+"309"	"Fam84a"	"L5 eNeuron"	"OPC"	1.43444838258915
+"310"	"N4bp3"	"L5 eNeuron"	"OPC"	1.41564201809623
+"311"	"Gpr158"	"L5 eNeuron"	"OPC"	1.40537642556292
+"312"	"Heatr5a"	"L5 eNeuron"	"OPC"	1.39185366519832
+"313"	"Cnnm4"	"L5 eNeuron"	"OPC"	1.37510861217301
+"314"	"Mos"	"L5 eNeuron"	"OPC"	1.36272453724953
+"315"	"Papln"	"L5 eNeuron"	"OPC"	1.3246344279715
+"316"	"Stk4"	"L5 eNeuron"	"OPC"	1.2781325166044
+"317"	"Qpctl"	"L5 eNeuron"	"OPC"	1.26458566840218
+"318"	"Marveld1"	"L5 eNeuron"	"OPC"	1.24924349515215
+"319"	"Lcor"	"L5 eNeuron"	"OPC"	1.23557869712012
+"320"	"Zkscan2"	"L5 eNeuron"	"OPC"	1.23133517718422
+"321"	"Cbl"	"L5 eNeuron"	"OPC"	1.23067923470683
+"322"	"Eya3"	"L5 eNeuron"	"OPC"	1.20593817390453
+"323"	"Slain2"	"L5 eNeuron"	"OPC"	1.17867143712374
+"324"	"Nfkbil1"	"L5 eNeuron"	"OPC"	1.16857079933359
+"325"	"Picalm"	"L5 eNeuron"	"OPC"	1.12138784931332
+"326"	"Elavl4"	"L5 eNeuron"	"OPC"	1.06350356251015
+"327"	"Dpp7"	"L5 eNeuron"	"OPC"	1.04379417806253
+"328"	"Stxbp2"	"astrocytes"	"L5 eNeuron"	2.90271608875375
+"329"	"Nefm"	"astrocytes"	"L5 eNeuron"	2.80195005602111
+"330"	"Pigo"	"astrocytes"	"L5 eNeuron"	2.72093244274438
+"331"	"Slc34a3"	"astrocytes"	"L5 eNeuron"	2.71616761870569
+"332"	"Notch3"	"astrocytes"	"L5 eNeuron"	2.44420276718754
+"333"	"Abcb5"	"astrocytes"	"L5 eNeuron"	2.32448954834839
+"334"	"Rxfp2"	"Adarb2 iNeuron"	"Lhx6 iNeuron"	2.86150589821416
+"335"	"Col11a2"	"Adarb2 iNeuron"	"Lhx6 iNeuron"	2.71128273686211
+"336"	"Zkscan1"	"Adarb2 iNeuron"	"Lhx6 iNeuron"	2.68523133378996
+"337"	"Zfp746"	"Adarb2 iNeuron"	"Lhx6 iNeuron"	2.65417633118268
+"338"	"Dnaaf1"	"Adarb2 iNeuron"	"Lhx6 iNeuron"	2.40836507817977
+"339"	"Gpr75"	"Adarb2 iNeuron"	"Lhx6 iNeuron"	2.36150355285069
+"340"	"Ecel1"	"Adarb2 iNeuron"	"Lhx6 iNeuron"	2.34861549375496
+"341"	"Kptn"	"Adarb2 iNeuron"	"Lhx6 iNeuron"	2.33634463700011
+"342"	"Bin3"	"Adarb2 iNeuron"	"Lhx6 iNeuron"	2.30828967221055
+"343"	"Gpr84"	"Adarb2 iNeuron"	"Lhx6 iNeuron"	2.27580684550019
+"344"	"Gatad2a"	"Adarb2 iNeuron"	"Lhx6 iNeuron"	2.24457008717305
+"345"	"Zfp112"	"Adarb2 iNeuron"	"Lhx6 iNeuron"	2.23519068661594
+"346"	"Kctd9"	"Adarb2 iNeuron"	"Lhx6 iNeuron"	2.15072358550564
+"347"	"Megf9"	"Adarb2 iNeuron"	"Lhx6 iNeuron"	2.10013404717622
+"348"	"Pex26"	"Adarb2 iNeuron"	"Lhx6 iNeuron"	2.0501461750855
+"349"	"Mapk6"	"Adarb2 iNeuron"	"Lhx6 iNeuron"	2.00963451446083
+"350"	"Ube2d2a"	"Adarb2 iNeuron"	"Lhx6 iNeuron"	2.00489440786605
+"351"	"Ranbp6"	"Adarb2 iNeuron"	"Lhx6 iNeuron"	1.99118617011718
+"352"	"Rbp1"	"Adarb2 iNeuron"	"Lhx6 iNeuron"	1.98400117485171
+"353"	"P2rx5"	"Lhx6 iNeuron"	"Adarb2 iNeuron"	3.16965932388522
+"354"	"Aif1l"	"Lhx6 iNeuron"	"Adarb2 iNeuron"	2.69311580550249
+"355"	"Dennd1c"	"Lhx6 iNeuron"	"Adarb2 iNeuron"	2.5534526671858
+"356"	"Trpc6"	"Lhx6 iNeuron"	"Adarb2 iNeuron"	2.26944033454588
+"357"	"Kdm6a"	"Lhx6 iNeuron"	"Adarb2 iNeuron"	2.21681842826192
+"358"	"Megf10"	"Lhx6 iNeuron"	"Adarb2 iNeuron"	2.11931931335597
+"359"	"Itga7"	"Lhx6 iNeuron"	"Adarb2 iNeuron"	2.04116098260791
+"360"	"Parn"	"Lhx6 iNeuron"	"Adarb2 iNeuron"	1.86668002905569
+"361"	"Opa3"	"Lhx6 iNeuron"	"Adarb2 iNeuron"	1.84184996678503
+"362"	"Dyrk1a"	"Lhx6 iNeuron"	"Adarb2 iNeuron"	1.81589169467784
+"363"	"Gp2"	"Lhx6 iNeuron"	"Adarb2 iNeuron"	1.81054797967136
+"364"	"Paxbp1"	"Lhx6 iNeuron"	"Adarb2 iNeuron"	1.80745224748728
+"365"	"Dffb"	"Lhx6 iNeuron"	"Adarb2 iNeuron"	1.8035404712604
+"366"	"Gabrg1"	"Lhx6 iNeuron"	"Adarb2 iNeuron"	1.77351588781026
+"367"	"Atp2b4"	"Lhx6 iNeuron"	"Adarb2 iNeuron"	1.77144463850549
+"368"	"Snx27"	"Lhx6 iNeuron"	"Adarb2 iNeuron"	1.75002072717071
+"369"	"Dusp6"	"Lhx6 iNeuron"	"Adarb2 iNeuron"	1.74424566217305
+"370"	"Ahsa2"	"Lhx6 iNeuron"	"Adarb2 iNeuron"	1.73660431580784
+"371"	"Rap2c"	"Lhx6 iNeuron"	"Adarb2 iNeuron"	1.72436868314449
+"372"	"Rnd3"	"Lhx6 iNeuron"	"Adarb2 iNeuron"	1.68502326174386
+"373"	"Zfp251"	"Lhx6 iNeuron"	"Adarb2 iNeuron"	1.66044732214417
+"374"	"Ano4"	"Lhx6 iNeuron"	"Adarb2 iNeuron"	1.65987615612013
+"375"	"Car7"	"Lhx6 iNeuron"	"Adarb2 iNeuron"	1.65958236927872
+"376"	"Was"	"Lhx6 iNeuron"	"Adarb2 iNeuron"	1.63986375135378
+"377"	"Kcnn4"	"Lhx6 iNeuron"	"Adarb2 iNeuron"	1.63725222246824
+"378"	"Acot12"	"Lhx6 iNeuron"	"Adarb2 iNeuron"	1.61913683310968
+"379"	"Usp2"	"Lhx6 iNeuron"	"Adarb2 iNeuron"	1.59815344707944
+"380"	"Dram1"	"Lhx6 iNeuron"	"Adarb2 iNeuron"	1.59153670280629
+"381"	"Srpk1"	"endothelial"	"endothelial"	4.41292956164602
+"382"	"Lep"	"endothelial"	"endothelial"	3.54524080057205
+"383"	"Ing2"	"endothelial"	"endothelial"	3.48450909176605
+"384"	"Ehd1"	"endothelial"	"endothelial"	3.20259479872072
+"385"	"Prkca"	"endothelial"	"endothelial"	2.9554910471343
+"386"	"Cyb561"	"endothelial"	"endothelial"	2.95374996707924
+"387"	"Htr2a"	"endothelial"	"endothelial"	2.83131569423674
+"388"	"Bhlha15"	"endothelial"	"endothelial"	2.79290149058981
+"389"	"Ubn2"	"endothelial"	"endothelial"	2.75680142499812
+"390"	"Gpr107"	"endothelial"	"endothelial"	2.72297923625866
+"391"	"Grid1"	"endothelial"	"endothelial"	2.70337601817153
+"392"	"Fam3c"	"endothelial"	"endothelial"	2.60766698684555
+"393"	"Mrs2"	"endothelial"	"endothelial"	2.48257578887577
+"394"	"Cyp1b1"	"endothelial"	"endothelial"	2.42713557975556
+"395"	"Rlf"	"endothelial"	"endothelial"	2.37670190538566
+"396"	"Lsm11"	"endothelial"	"endothelial"	2.37486762146254
+"397"	"Entpd1"	"endothelial"	"endothelial"	2.24724758654071
+"398"	"Exo1"	"endothelial"	"endothelial"	2.22749138490147
+"399"	"Ptprn2"	"endothelial"	"L6 eNeuron"	3.58711407676102
+"400"	"Med25"	"endothelial"	"L6 eNeuron"	2.70637291737479
+"401"	"Dync1i1"	"endothelial"	"L6 eNeuron"	2.66322990818662
+"402"	"Adcy5"	"endothelial"	"L6 eNeuron"	2.43638536006447
+"403"	"Bcas1"	"endothelial"	"L6 eNeuron"	2.42697305527687
+"404"	"Usp31"	"endothelial"	"L6 eNeuron"	2.41121858177315
+"405"	"Cdk12"	"L5 eNeuron"	"endothelial"	1.18829852855164
+"406"	"Crim1"	"endothelial"	"L5 eNeuron"	3.6951218938503
+"407"	"Cacna1e"	"endothelial"	"L5 eNeuron"	3.6560740478855
+"408"	"Pds5a"	"endothelial"	"L5 eNeuron"	3.61943343996694
+"409"	"Trim25"	"endothelial"	"L5 eNeuron"	3.47781549349127
+"410"	"Rnf6"	"endothelial"	"L5 eNeuron"	2.88624525467007
+"411"	"Scn2b"	"endothelial"	"L5 eNeuron"	2.59357145637842
+"412"	"Abcb8"	"endothelial"	"L5 eNeuron"	2.37983099578413
+"413"	"Wdfy3"	"endothelial"	"L5 eNeuron"	2.27652736767914
+"414"	"Pak1"	"endothelial"	"L5 eNeuron"	2.27306323542961
+"415"	"Adcy2"	"endothelial"	"L5 eNeuron"	2.24943699902591
+"416"	"Prpf38b"	"endothelial"	"L5 eNeuron"	2.24815924470953
+"417"	"Klf12"	"L4 eNeuron"	"L6 eNeuron"	2.21893315849178
+"418"	"Mpeg1"	"L4 eNeuron"	"L6 eNeuron"	2.18659142644473
+"419"	"Ptprr"	"L4 eNeuron"	"L6 eNeuron"	2.06309254179696
+"420"	"Fam114a1"	"L4 eNeuron"	"L6 eNeuron"	1.92692101146493
+"421"	"Cdh11"	"L4 eNeuron"	"L6 eNeuron"	1.8656468302589
+"422"	"Ptrhd1"	"L4 eNeuron"	"L6 eNeuron"	1.74997204734617
+"423"	"Sdad1"	"L4 eNeuron"	"L6 eNeuron"	1.74653629453906
+"424"	"Tnfaip8"	"L4 eNeuron"	"L6 eNeuron"	1.68590800798413
+"425"	"Tenm3"	"L4 eNeuron"	"L6 eNeuron"	1.66505721845617
+"426"	"Orai1"	"L4 eNeuron"	"L6 eNeuron"	1.63300364874523
+"427"	"Mbnl1"	"L4 eNeuron"	"L6 eNeuron"	1.6072697384054
+"428"	"Tcf23"	"L4 eNeuron"	"L6 eNeuron"	1.59848251211483
+"429"	"Gpc1"	"L4 eNeuron"	"L6 eNeuron"	1.56080806586117
+"430"	"Sdc1"	"L4 eNeuron"	"L6 eNeuron"	1.53493287997702
+"431"	"Zcchc24"	"L4 eNeuron"	"L6 eNeuron"	1.47957778093156
+"432"	"Fbxl18"	"L4 eNeuron"	"L6 eNeuron"	1.45878601950175
+"433"	"Srms"	"L4 eNeuron"	"L6 eNeuron"	1.4569446127223
+"434"	"Klhl24"	"L4 eNeuron"	"L6 eNeuron"	1.44577736028145
+"435"	"Gigyf2"	"L4 eNeuron"	"L6 eNeuron"	1.43557210434886
+"436"	"Aldh1b1"	"L4 eNeuron"	"L6 eNeuron"	1.41567849089865
+"437"	"Ablim1"	"L4 eNeuron"	"L6 eNeuron"	1.40397632092502
+"438"	"Ghdc"	"L4 eNeuron"	"L6 eNeuron"	1.39887055634747
+"439"	"Klhl42"	"L4 eNeuron"	"L6 eNeuron"	1.37144588320672
+"440"	"Gm9899"	"L4 eNeuron"	"L6 eNeuron"	1.35845029139922
+"441"	"Syndig1"	"L4 eNeuron"	"L6 eNeuron"	1.31102262693302
+"442"	"Lrig1"	"L4 eNeuron"	"L6 eNeuron"	1.26985865307105
+"443"	"Ralb"	"L4 eNeuron"	"L6 eNeuron"	1.23311452230912
+"444"	"Nelfcd"	"L4 eNeuron"	"L6 eNeuron"	1.22126395227624
+"445"	"Slc25a37"	"L4 eNeuron"	"L6 eNeuron"	1.21240058242128
+"446"	"Slc7a5"	"L4 eNeuron"	"L6 eNeuron"	1.19319288059695
+"447"	"Zfp622"	"L4 eNeuron"	"L6 eNeuron"	1.17941958675009
+"448"	"Rprm"	"L4 eNeuron"	"L6 eNeuron"	1.17520537157548
+"449"	"Slc4a11"	"L6 eNeuron"	"L4 eNeuron"	1.55534966430332
+"450"	"Plcxd2"	"L6 eNeuron"	"L4 eNeuron"	1.4234063900596
+"451"	"Zbtb38"	"L6 eNeuron"	"L4 eNeuron"	1.25755555158582
+"452"	"Hrh3"	"L6 eNeuron"	"L4 eNeuron"	1.2095897765582
+"453"	"Gm2a"	"L6 eNeuron"	"L4 eNeuron"	1.19870425998116
+"454"	"Wscd2"	"L6 eNeuron"	"L4 eNeuron"	1.19046721034255
+"455"	"Adamts14"	"L6 eNeuron"	"L4 eNeuron"	1.18429827721008
+"456"	"Zfp740"	"L6 eNeuron"	"L4 eNeuron"	1.16516643058727
+"457"	"Mypop"	"L6 eNeuron"	"L4 eNeuron"	1.12834951305087
+"458"	"Ntng1"	"L6 eNeuron"	"L4 eNeuron"	1.1136502427024
+"459"	"Tmem175"	"L6 eNeuron"	"L4 eNeuron"	1.10832337222694
+"460"	"Gpatch4"	"L6 eNeuron"	"L4 eNeuron"	1.07872128385231
+"461"	"Slc45a4"	"L6 eNeuron"	"L4 eNeuron"	1.07247688125629
+"462"	"Lamp5"	"L6 eNeuron"	"L4 eNeuron"	1.06307537180408
+"463"	"Lrp3"	"L6 eNeuron"	"L4 eNeuron"	1.0586715711028
+"464"	"Mms19"	"L6 eNeuron"	"L4 eNeuron"	1.05130912146281
+"465"	"Rasd2"	"L6 eNeuron"	"L4 eNeuron"	1.00826474977301
+"466"	"Fam129b"	"L6 eNeuron"	"L4 eNeuron"	0.999214308811652
+"467"	"Zbtb16"	"L6 eNeuron"	"L4 eNeuron"	0.989339144819842
+"468"	"Sfxn3"	"L6 eNeuron"	"L4 eNeuron"	0.960992486515287
+"469"	"Daam2"	"L6 eNeuron"	"L4 eNeuron"	0.950405169400042
+"470"	"Dhcr7"	"L6 eNeuron"	"L4 eNeuron"	0.949727632371523
+"471"	"Tmem9b"	"L6 eNeuron"	"L4 eNeuron"	0.949031339956563
+"472"	"Hr"	"L6 eNeuron"	"L4 eNeuron"	0.946283319160111
+"473"	"Trim11"	"L6 eNeuron"	"L4 eNeuron"	0.938282204880065
+"474"	"Lasp1"	"L6 eNeuron"	"L4 eNeuron"	0.876507291999491
+"475"	"Scml4"	"L6 eNeuron"	"L4 eNeuron"	0.86956741863015
+"476"	"Klhl11"	"L6 eNeuron"	"L4 eNeuron"	0.850120279898537
+"477"	"Pianp"	"L6 eNeuron"	"L4 eNeuron"	0.849651687365406
+"478"	"Atxn7l3"	"L6 eNeuron"	"L4 eNeuron"	0.837914160367611
+"479"	"Aldh1l1"	"L6 eNeuron"	"L4 eNeuron"	0.823461963158465
+"480"	"Aldh2"	"L6 eNeuron"	"L4 eNeuron"	0.82335344685007
+"481"	"Jakmip1"	"astrocytes"	"L6 eNeuron"	3.75040525973492
+"482"	"Fam217b"	"astrocytes"	"L6 eNeuron"	3.541534503781
+"483"	"Sun1"	"astrocytes"	"L6 eNeuron"	2.6584548771498
+"484"	"Tmem86a"	"astrocytes"	"L6 eNeuron"	2.6289639717703
+"485"	"Keap1"	"astrocytes"	"L6 eNeuron"	2.48857035206546
+"486"	"Bin1"	"astrocytes"	"L6 eNeuron"	2.45580523140726
+"487"	"Prdm16"	"astrocytes"	"L6 eNeuron"	2.43982534107614
+"488"	"Gas7"	"astrocytes"	"L6 eNeuron"	2.42322146866196
+"489"	"Degs1"	"astrocytes"	"L6 eNeuron"	2.33732509350305
+"490"	"Rfng"	"astrocytes"	"L6 eNeuron"	2.29193551167203
+"491"	"Tnrc18"	"L6 eNeuron"	"astrocytes"	1.03020477310019
+"492"	"Gramd1c"	"L5 eNeuron"	"mural"	1.52516214927888
+"493"	"Pfkl"	"mural"	"L5 eNeuron"	4.61779191280646
+"494"	"Fam32a"	"mural"	"L5 eNeuron"	4.57503937835979
+"495"	"Pcnx"	"mural"	"L5 eNeuron"	4.51914954661131
+"496"	"Abra"	"mural"	"L5 eNeuron"	4.17147184714658
+"497"	"Thop1"	"L6 eNeuron"	"mural"	0.875669176996872
+"498"	"Adora1"	"Lhx6 iNeuron"	"L6 eNeuron"	2.50625935992543
+"499"	"Ddx41"	"Lhx6 iNeuron"	"L6 eNeuron"	1.73273585309691
+"500"	"Apba1"	"Lhx6 iNeuron"	"L6 eNeuron"	1.66719969913228
+"501"	"Ly6e"	"Lhx6 iNeuron"	"L6 eNeuron"	1.64176395969337
+"502"	"Rap1gap2"	"OPC"	"L6 eNeuron"	4.04589904836445
+"503"	"Ap2a2"	"OPC"	"L6 eNeuron"	4.03171196716947
+"504"	"Syt13"	"OPC"	"L6 eNeuron"	3.99523299076415
+"505"	"Clk3"	"OPC"	"L6 eNeuron"	3.75193609993204
+"506"	"Nat14"	"OPC"	"L6 eNeuron"	3.71635577203892
+"507"	"Nln"	"OPC"	"L6 eNeuron"	3.55736838437192
+"508"	"Sqle"	"OPC"	"L6 eNeuron"	2.72539540903159
+"509"	"Cplx3"	"L6 eNeuron"	"OPC"	1.23874429492606
+"510"	"Rnf44"	"L6 eNeuron"	"OPC"	1.07931969635617
+"511"	"Cmtr1"	"L6 eNeuron"	"OPC"	0.878733781744042
+"512"	"Mgrn1"	"Olig"	"L6 eNeuron"	4.01715813120161
+"513"	"Mog"	"L6 eNeuron"	"Olig"	1.08587831572095
+"514"	"Specc1"	"Olig"	"astrocytes"	3.79505251851278
+"515"	"Ripk3"	"Olig"	"astrocytes"	3.55104531867979
+"516"	"Pogz"	"astrocytes"	"Olig"	2.74977848422044
+"517"	"Pkp4"	"astrocytes"	"Olig"	2.72007396612692
+"518"	"Xab2"	"astrocytes"	"Olig"	2.59932095841915
+"519"	"Wnk1"	"astrocytes"	"Olig"	2.59878128376264
+"520"	"Pdp1"	"astrocytes"	"Olig"	2.59275347500084
+"521"	"Ubqln1"	"astrocytes"	"Olig"	2.53948129470347
+"522"	"Agfg2"	"astrocytes"	"Olig"	2.52612641585021
+"523"	"Polr2b"	"astrocytes"	"Olig"	2.38412202383585
+"524"	"Sesn1"	"astrocytes"	"Olig"	2.38222815022899
+"525"	"Prpf40b"	"astrocytes"	"Olig"	2.36268095201149
+"526"	"Zbtb12"	"astrocytes"	"Olig"	2.33583755935012
+"527"	"Emp2"	"astrocytes"	"Olig"	2.33469309675825
+"528"	"Ndst2"	"astrocytes"	"Olig"	2.32454495077175
+"529"	"Bmpr1b"	"Olig"	"endothelial"	3.56501233189737
+"530"	"Cyb5r3"	"Olig"	"endothelial"	3.02637144576656
+"531"	"Zfp251"	"Olig"	"endothelial"	2.99349082540957
+"532"	"Phc3"	"endothelial"	"Olig"	3.78678788570134
+"533"	"Fam118a"	"endothelial"	"Olig"	3.76608351180857
+"534"	"Kremen1"	"endothelial"	"Olig"	3.76608351180857
+"535"	"Ptx4"	"endothelial"	"Olig"	3.25544992783997
+"536"	"Cand1"	"endothelial"	"Olig"	2.98673834829577
+"537"	"Tat"	"endothelial"	"Olig"	2.92735826607362
+"538"	"Foxa2"	"endothelial"	"Olig"	2.78029658680067
+"539"	"Clk3"	"endothelial"	"Olig"	2.70050818659202
+"540"	"Thop1"	"endothelial"	"Olig"	2.69224362465903
+"541"	"Ubn2"	"endothelial"	"Olig"	2.66210773263509
+"542"	"Flrt1"	"endothelial"	"Olig"	2.52802284369253
+"543"	"Fem1b"	"endothelial"	"Olig"	2.38117830557082
+"544"	"Ankrd13a"	"endothelial"	"Olig"	2.35327464357961
+"545"	"Actr10"	"endothelial"	"Olig"	2.33424280521909
+"546"	"Adam9"	"endothelial"	"Olig"	2.27705643402799
+"547"	"Stk39"	"endothelial"	"Olig"	2.24238047575641
+"548"	"Pla2g16"	"endothelial"	"Olig"	2.23899788359033
+"549"	"Slc35a3"	"Lhx6 iNeuron"	"Lhx6 iNeuron"	2.69787244966898
+"550"	"Thop1"	"Lhx6 iNeuron"	"Lhx6 iNeuron"	2.3113723014744
+"551"	"Rnf122"	"Lhx6 iNeuron"	"Lhx6 iNeuron"	2.30777008198544
+"552"	"Havcr2"	"Lhx6 iNeuron"	"Lhx6 iNeuron"	2.12001720166482
+"553"	"Mtmr2"	"Lhx6 iNeuron"	"Lhx6 iNeuron"	2.10764230858051
+"554"	"Cyp2f2"	"Lhx6 iNeuron"	"Lhx6 iNeuron"	1.81765320087745
+"555"	"Sacm1l"	"Lhx6 iNeuron"	"Lhx6 iNeuron"	1.75500249421267
+"556"	"Blnk"	"Lhx6 iNeuron"	"Lhx6 iNeuron"	1.72611622756995
+"557"	"Gcgr"	"Lhx6 iNeuron"	"Lhx6 iNeuron"	1.69805185149314
+"558"	"Plekha2"	"Lhx6 iNeuron"	"Lhx6 iNeuron"	1.6644069728995
+"559"	"Zkscan4"	"Lhx6 iNeuron"	"Lhx6 iNeuron"	1.6100065777134
+"560"	"Cnp"	"L5 eNeuron"	"Olig"	1.62822966502069
+"561"	"Dhx40"	"L5 eNeuron"	"Olig"	1.13987932606503
+"562"	"Mag"	"L5 eNeuron"	"Olig"	1.03808587822004
+"563"	"Pcp4l1"	"Olig"	"L5 eNeuron"	4.20837090102029
+"564"	"Plxna2"	"Olig"	"L5 eNeuron"	3.58706272210787
+"565"	"Ceacam16"	"Olig"	"L5 eNeuron"	3.5798922593889
+"566"	"Aco1"	"Olig"	"OPC"	3.78597091517056
+"567"	"Slc27a4"	"OPC"	"Olig"	4.2597811474823
+"568"	"Adam23"	"OPC"	"Olig"	3.9874239613296
+"569"	"Trp53inp2"	"OPC"	"Olig"	3.97937089352334
+"570"	"Wdfy3"	"OPC"	"Olig"	3.83913278871155
+"571"	"Ndst1"	"OPC"	"Olig"	3.71936759132063
+"572"	"Prom1"	"OPC"	"Olig"	3.68700987516991
+"573"	"Nfkbil1"	"OPC"	"Olig"	3.57249602314101
+"574"	"Abl1"	"OPC"	"Olig"	3.56703693673238
+"575"	"Dnase1l3"	"OPC"	"Olig"	2.76416811343994
+"576"	"Sh2b1"	"OPC"	"Olig"	2.75348839279983
+"577"	"Kndc1"	"OPC"	"Olig"	2.61956534405909
+"578"	"Apc"	"microglia"	"L6 eNeuron"	5.09047787854585
+"579"	"Scyl2"	"L6 eNeuron"	"microglia"	0.943536059600952
+"580"	"Ephb1"	"L6 eNeuron"	"microglia"	0.85840007961046
+"581"	"Clcnka"	"Adarb2 iNeuron"	"L6 eNeuron"	3.83786259525637
+"582"	"Hk2"	"Adarb2 iNeuron"	"L6 eNeuron"	3.72637609012663
+"583"	"Ipo5"	"Adarb2 iNeuron"	"L6 eNeuron"	2.81211124626625
+"584"	"Xpo7"	"Adarb2 iNeuron"	"L6 eNeuron"	2.65545015827088
+"585"	"Vldlr"	"Adarb2 iNeuron"	"L6 eNeuron"	2.40945363511371
+"586"	"Glrx3"	"Adarb2 iNeuron"	"L6 eNeuron"	2.39195054324745
+"587"	"Ube2d2a"	"Adarb2 iNeuron"	"L6 eNeuron"	2.31429806047552
+"588"	"Inhbe"	"Adarb2 iNeuron"	"L6 eNeuron"	2.28879941624493
+"589"	"Rps6ka3"	"Adarb2 iNeuron"	"L6 eNeuron"	2.17520032119255
+"590"	"Gcc1"	"Adarb2 iNeuron"	"L6 eNeuron"	2.17188125504601
+"591"	"Fam155a"	"Adarb2 iNeuron"	"L6 eNeuron"	2.15373604330901
+"592"	"Znrf3"	"Adarb2 iNeuron"	"L6 eNeuron"	2.04425363113457
+"593"	"Sergef"	"Adarb2 iNeuron"	"L6 eNeuron"	2.02925586927357
+"594"	"Klhl10"	"Adarb2 iNeuron"	"L6 eNeuron"	2.00302752462928
+"595"	"Sstr1"	"L6 eNeuron"	"Adarb2 iNeuron"	1.33560653105155
+"596"	"Gpr19"	"L6 eNeuron"	"Adarb2 iNeuron"	1.19315185996353
+"597"	"Prkrip1"	"L6 eNeuron"	"Adarb2 iNeuron"	1.04880766349295
+"598"	"Rnd3"	"L6 eNeuron"	"Adarb2 iNeuron"	1.02683011707802
+"599"	"Bcl9"	"L6 eNeuron"	"Adarb2 iNeuron"	0.979951473634477
+"600"	"Nelfb"	"L6 eNeuron"	"Adarb2 iNeuron"	0.961245819680631
+"601"	"Creld1"	"L6 eNeuron"	"Adarb2 iNeuron"	0.958900893766517
+"602"	"Mocs3"	"L6 eNeuron"	"Adarb2 iNeuron"	0.956786028281753
+"603"	"Mief1"	"L6 eNeuron"	"Adarb2 iNeuron"	0.919803365344264
+"604"	"Man2b2"	"L6 eNeuron"	"Adarb2 iNeuron"	0.896261045604118
+"605"	"Anxa6"	"astrocytes"	"astrocytes"	3.71304654772664
+"606"	"Slu7"	"astrocytes"	"astrocytes"	3.57958129884735
+"607"	"Fosb"	"astrocytes"	"astrocytes"	2.82775768628897
+"608"	"Sulf2"	"astrocytes"	"astrocytes"	2.76627882243606
+"609"	"Yipf3"	"astrocytes"	"astrocytes"	2.43627355980063
+"610"	"Pdpn"	"astrocytes"	"astrocytes"	2.38383733267816
+"611"	"Prom1"	"astrocytes"	"astrocytes"	2.18816652521213
+"612"	"Dnajc16"	"OPC"	"astrocytes"	3.98813513992812
+"613"	"Usf2"	"OPC"	"astrocytes"	3.07204553530975
+"614"	"Sh3pxd2a"	"OPC"	"astrocytes"	2.80711558453017
+"615"	"Fgf9"	"astrocytes"	"OPC"	3.20668170585457
+"616"	"Snx11"	"astrocytes"	"OPC"	3.06383412709566
+"617"	"Cdh19"	"astrocytes"	"OPC"	3.02411156680043
+"618"	"Esm1"	"astrocytes"	"OPC"	2.79790496567983
+"619"	"Marveld1"	"astrocytes"	"OPC"	2.70173125423458
+"620"	"Zbed3"	"astrocytes"	"OPC"	2.62568207377175
+"621"	"P2ry12"	"astrocytes"	"OPC"	2.59785245565243
+"622"	"Znrf3"	"astrocytes"	"OPC"	2.58707521496637
+"623"	"Afap1l2"	"astrocytes"	"OPC"	2.58671220350911
+"624"	"Emp2"	"astrocytes"	"OPC"	2.52350065790664
+"625"	"Gga2"	"astrocytes"	"OPC"	2.520960228367
+"626"	"Poc1a"	"astrocytes"	"OPC"	2.44725149841738
+"627"	"Vipas39"	"astrocytes"	"OPC"	2.39269274849963
+"628"	"Ubiad1"	"astrocytes"	"OPC"	2.37865434708182
+"629"	"Mre11a"	"astrocytes"	"OPC"	2.298288452905
+"630"	"Pdpn"	"astrocytes"	"OPC"	2.24461922048227
+"631"	"Zcwpw1"	"astrocytes"	"OPC"	2.18957235478861
+"632"	"Clcn7"	"astrocytes"	"OPC"	2.18427468707282
+"633"	"Laptm5"	"L2/3 eNeuron"	"L2/3 eNeuron"	-1.56221276947891
+"634"	"Ubn2"	"L2/3 eNeuron"	"L2/3 eNeuron"	-1.56358371696447
+"635"	"Oplah"	"L2/3 eNeuron"	"L2/3 eNeuron"	-1.64145011205586
+"636"	"Zmat4"	"L2/3 eNeuron"	"L2/3 eNeuron"	-1.64145075840345
+"637"	"Rad54l2"	"L2/3 eNeuron"	"L2/3 eNeuron"	-1.64440433102237
+"638"	"Boc"	"L2/3 eNeuron"	"L2/3 eNeuron"	-1.6763829771637
+"639"	"Ccdc25"	"L2/3 eNeuron"	"L2/3 eNeuron"	-1.68402002736678
+"640"	"Ick"	"L2/3 eNeuron"	"L2/3 eNeuron"	-1.70931794693592
+"641"	"Gpatch8"	"L2/3 eNeuron"	"L2/3 eNeuron"	-1.71067553148544
+"642"	"Flnc"	"L2/3 eNeuron"	"L2/3 eNeuron"	-1.81543322458558
+"643"	"Sema5a"	"L2/3 eNeuron"	"L2/3 eNeuron"	-2.00831923398338
+"644"	"Cep63"	"L2/3 eNeuron"	"L2/3 eNeuron"	-2.13471195925947
+"645"	"Bbx"	"Adarb2 iNeuron"	"L2/3 eNeuron"	-2.18158489886059
+"646"	"Slc4a4"	"Adarb2 iNeuron"	"L2/3 eNeuron"	-2.2653351261778
+"647"	"Myo1a"	"Adarb2 iNeuron"	"L2/3 eNeuron"	-2.325015090423
+"648"	"Ppip5k2"	"Adarb2 iNeuron"	"L2/3 eNeuron"	-2.49546934970153
+"649"	"Ubtd2"	"Adarb2 iNeuron"	"L2/3 eNeuron"	-2.56273590603917
+"650"	"Sprtn"	"Adarb2 iNeuron"	"L2/3 eNeuron"	-2.57779599565186
+"651"	"Eif4enif1"	"Adarb2 iNeuron"	"L2/3 eNeuron"	-2.62191181595355
+"652"	"Tmem151a"	"Adarb2 iNeuron"	"L2/3 eNeuron"	-2.84240235069646
+"653"	"Cdh6"	"Adarb2 iNeuron"	"L2/3 eNeuron"	-3.49354949877344
+"654"	"Pcsk1"	"Adarb2 iNeuron"	"L2/3 eNeuron"	-3.73209057135136
+"655"	"Gpn1"	"L2/3 eNeuron"	"Adarb2 iNeuron"	-1.61940778323979
+"656"	"Golga7b"	"Lhx6 iNeuron"	"L2/3 eNeuron"	-1.673962440992
+"657"	"Mtmr4"	"Lhx6 iNeuron"	"L2/3 eNeuron"	-1.79866393952843
+"658"	"Paqr7"	"Lhx6 iNeuron"	"L2/3 eNeuron"	-1.81720274153691
+"659"	"Clptm1l"	"Lhx6 iNeuron"	"L2/3 eNeuron"	-1.89791759139604
+"660"	"Syt2"	"Lhx6 iNeuron"	"L2/3 eNeuron"	-1.98633184958013
+"661"	"Ly6e"	"Lhx6 iNeuron"	"L2/3 eNeuron"	-2.37427744614728
+"662"	"Pacsin2"	"Lhx6 iNeuron"	"L2/3 eNeuron"	-3.83219593912724
+"663"	"Car10"	"L2/3 eNeuron"	"astrocytes"	-1.57574351410415
+"664"	"Cdipt"	"L2/3 eNeuron"	"astrocytes"	-1.58399490769254
+"665"	"Fam168b"	"L2/3 eNeuron"	"astrocytes"	-1.67606528713672
+"666"	"Tshz3"	"L2/3 eNeuron"	"astrocytes"	-2.45530983129449
+"667"	"Smarcd1"	"L2/3 eNeuron"	"astrocytes"	-3.49802349611272
+"668"	"Adprh"	"astrocytes"	"L2/3 eNeuron"	-4.13172872806868
+"669"	"Kcnn2"	"astrocytes"	"L2/3 eNeuron"	-4.15077081056097
+"670"	"Ralgds"	"astrocytes"	"L2/3 eNeuron"	-4.26164668814881
+"671"	"Tbc1d9b"	"astrocytes"	"L2/3 eNeuron"	-4.35674163044551
+"672"	"Tmem132a"	"astrocytes"	"L2/3 eNeuron"	-4.39748206160856
+"673"	"Cnp"	"astrocytes"	"L4 eNeuron"	-2.66785067285249
+"674"	"Ubn1"	"astrocytes"	"L4 eNeuron"	-3.58244921975081
+"675"	"Akt2"	"astrocytes"	"L4 eNeuron"	-3.61793251677792
+"676"	"Ctnna2"	"astrocytes"	"L4 eNeuron"	-3.82948128494876
+"677"	"Aqp4"	"astrocytes"	"L4 eNeuron"	-3.94605302662387
+"678"	"Wwc1"	"microglia"	"astrocytes"	-4.88315128817226
+"679"	"R3hdm2"	"microglia"	"astrocytes"	-4.93468970806666
+"680"	"Pak1"	"endothelial"	"L2/3 eNeuron"	-3.54199614542902
+"681"	"Arnt2"	"endothelial"	"L2/3 eNeuron"	-3.67761606519475
+"682"	"Ttbk1"	"endothelial"	"L2/3 eNeuron"	-3.73511121313055
+"683"	"Fyn"	"endothelial"	"L2/3 eNeuron"	-3.73648940297219
+"684"	"Dpp6"	"L2/3 eNeuron"	"endothelial"	-1.67412729896471
+"685"	"Tex2"	"L2/3 eNeuron"	"endothelial"	-2.08550185395673
+"686"	"Ppp1cc"	"L2/3 eNeuron"	"endothelial"	-2.74056909792063
+"687"	"Numa1"	"L4 eNeuron"	"L4 eNeuron"	-1.16540762006555
+"688"	"Elp2"	"L4 eNeuron"	"L4 eNeuron"	-1.19977795033113
+"689"	"Azin1"	"L4 eNeuron"	"L4 eNeuron"	-1.22092447929318
+"690"	"Epdr1"	"L4 eNeuron"	"L4 eNeuron"	-1.22167933538489
+"691"	"Mmp17"	"L4 eNeuron"	"L4 eNeuron"	-1.22673813878173
+"692"	"Tsnax"	"L4 eNeuron"	"L4 eNeuron"	-1.23625188025722
+"693"	"Gpc1"	"L4 eNeuron"	"L4 eNeuron"	-1.23659079149387
+"694"	"Ezh2"	"L4 eNeuron"	"L4 eNeuron"	-1.23951881421765
+"695"	"Stau1"	"L4 eNeuron"	"L4 eNeuron"	-1.24077505957809
+"696"	"Mmrn1"	"L4 eNeuron"	"L4 eNeuron"	-1.26963968473705
+"697"	"Gcc2"	"L4 eNeuron"	"L4 eNeuron"	-1.32400753254642
+"698"	"Fam129b"	"L4 eNeuron"	"L4 eNeuron"	-1.33681361538698
+"699"	"Sp1"	"L4 eNeuron"	"L4 eNeuron"	-1.34009778109383
+"700"	"Arid5b"	"L4 eNeuron"	"L4 eNeuron"	-1.34781114726839
+"701"	"Ift52"	"L4 eNeuron"	"L4 eNeuron"	-1.36957813138295
+"702"	"Rbm43"	"L4 eNeuron"	"L4 eNeuron"	-1.45221790687997
+"703"	"Nelfcd"	"L4 eNeuron"	"L4 eNeuron"	-1.47668023812263
+"704"	"Ghdc"	"L4 eNeuron"	"L4 eNeuron"	-1.48251389692807
+"705"	"Rnft2"	"L4 eNeuron"	"L4 eNeuron"	-1.48530374071493
+"706"	"Cntn5"	"L4 eNeuron"	"L4 eNeuron"	-1.51471818490956
+"707"	"Lnpep"	"L4 eNeuron"	"L4 eNeuron"	-1.54551048483407
+"708"	"Tm6sf2"	"L4 eNeuron"	"L4 eNeuron"	-1.55736212998478
+"709"	"Slc5a11"	"L4 eNeuron"	"L4 eNeuron"	-1.56412527681507
+"710"	"Efnb3"	"L4 eNeuron"	"L4 eNeuron"	-1.56943809378096
+"711"	"Zscan20"	"L4 eNeuron"	"L4 eNeuron"	-1.60178408897564
+"712"	"Insig1"	"L4 eNeuron"	"L4 eNeuron"	-1.67318073222202
+"713"	"Hivep1"	"L4 eNeuron"	"L4 eNeuron"	-1.67861218102073
+"714"	"Fut1"	"L4 eNeuron"	"L4 eNeuron"	-1.74658723582086
+"715"	"Epha2"	"L4 eNeuron"	"L4 eNeuron"	-1.82223493575403
+"716"	"Cldn23"	"L4 eNeuron"	"L4 eNeuron"	-1.83524762997649
+"717"	"Col6a1"	"L4 eNeuron"	"L4 eNeuron"	-1.90917390730846
+"718"	"Ptprr"	"L4 eNeuron"	"L4 eNeuron"	-1.96829445130869
+"719"	"Tmem154"	"L4 eNeuron"	"L4 eNeuron"	-1.98548579199104
+"720"	"Gpr179"	"L4 eNeuron"	"L4 eNeuron"	-2.00922893131889
+"721"	"Clcn5"	"L4 eNeuron"	"L4 eNeuron"	-2.08215224474342
+"722"	"Klf12"	"L4 eNeuron"	"L4 eNeuron"	-2.27174292811157
+"723"	"Atp2b4"	"Adarb2 iNeuron"	"L4 eNeuron"	-2.45991490935346
+"724"	"Tox4"	"Adarb2 iNeuron"	"L4 eNeuron"	-3.50732659413678
+"725"	"Fut8"	"OPC"	"OPC"	-3.4639395136631
+"726"	"Prss57"	"OPC"	"OPC"	-3.8260098753486
+"727"	"Zswim8"	"L2/3 eNeuron"	"OPC"	-2.28718880299406
+"728"	"Oaz2"	"endothelial"	"Lhx6 iNeuron"	-2.67043501499688
+"729"	"Ppp1r12c"	"Lhx6 iNeuron"	"endothelial"	-1.78839224558302
+"730"	"Olfml3"	"Lhx6 iNeuron"	"endothelial"	-1.83548298723177
+"731"	"Itsn1"	"mural"	"Lhx6 iNeuron"	-4.09507117753138
+"732"	"Pmpca"	"mural"	"Lhx6 iNeuron"	-4.09507117753138
+"733"	"Osbpl2"	"mural"	"Lhx6 iNeuron"	-4.40249042020176
+"734"	"Nsmf"	"mural"	"Lhx6 iNeuron"	-4.59027993848396
+"735"	"Dtx3"	"mural"	"Lhx6 iNeuron"	-4.76213720277412
+"736"	"Myh10"	"Lhx6 iNeuron"	"mural"	-1.7674951197145
+"737"	"Nf2"	"Adarb2 iNeuron"	"Adarb2 iNeuron"	-2.19386935899
+"738"	"Tmem151b"	"Adarb2 iNeuron"	"Adarb2 iNeuron"	-2.27524237971715
+"739"	"Trio"	"Adarb2 iNeuron"	"Adarb2 iNeuron"	-2.4816265742601
+"740"	"Hars"	"Adarb2 iNeuron"	"Adarb2 iNeuron"	-2.56043450265879
+"741"	"Bap1"	"Adarb2 iNeuron"	"Adarb2 iNeuron"	-2.66702901652369
+"742"	"Cotl1"	"Adarb2 iNeuron"	"Adarb2 iNeuron"	-2.76002304034961
+"743"	"Asap1"	"Adarb2 iNeuron"	"Adarb2 iNeuron"	-3.48141343325878
+"744"	"Hsdl1"	"Adarb2 iNeuron"	"Adarb2 iNeuron"	-3.55265536276828
+"745"	"Aars"	"Adarb2 iNeuron"	"Adarb2 iNeuron"	-3.6017874464512
+"746"	"Ctsf"	"Adarb2 iNeuron"	"Adarb2 iNeuron"	-3.65724712225105
+"747"	"Stx1a"	"Adarb2 iNeuron"	"Adarb2 iNeuron"	-3.79281152498331
+"748"	"Mpped1"	"astrocytes"	"Adarb2 iNeuron"	-3.53685884948326
+"749"	"Tmem38a"	"astrocytes"	"Adarb2 iNeuron"	-3.598496184451
+"750"	"Dmtn"	"astrocytes"	"Adarb2 iNeuron"	-3.60843062905205
+"751"	"Gpd2"	"astrocytes"	"Adarb2 iNeuron"	-3.83275285718035
+"752"	"Dzank1"	"Adarb2 iNeuron"	"astrocytes"	-2.3192129187072
+"753"	"Gapvd1"	"Adarb2 iNeuron"	"astrocytes"	-2.32530569074359
+"754"	"Chat"	"Adarb2 iNeuron"	"astrocytes"	-2.59893909499622
+"755"	"Arhgap23"	"OPC"	"endothelial"	-3.84560368265355
+"756"	"Cdc42bpb"	"endothelial"	"OPC"	-4.03545508605596
+"757"	"Pdgfb"	"endothelial"	"OPC"	-4.10179049078928
+"758"	"Zcchc12"	"Adarb2 iNeuron"	"endothelial"	-2.33302228741161
+"759"	"Cdk5rap1"	"Adarb2 iNeuron"	"endothelial"	-3.56347455556787
+"760"	"Rab44"	"endothelial"	"Adarb2 iNeuron"	-3.58325168471069
+"761"	"Srcin1"	"endothelial"	"Adarb2 iNeuron"	-3.77156994660249
+"762"	"Hipk2"	"endothelial"	"Adarb2 iNeuron"	-4.03579774182783
+"763"	"Copa"	"astrocytes"	"endothelial"	-2.94399921249495
+"764"	"Gramd4"	"astrocytes"	"endothelial"	-2.97105512839968
+"765"	"Ppp1r3d"	"astrocytes"	"endothelial"	-3.69255395891662
+"766"	"Zswim8"	"endothelial"	"astrocytes"	-2.77227181915916
+"767"	"Ushbp1"	"endothelial"	"astrocytes"	-3.83733769896215
+"768"	"Tmem151b"	"endothelial"	"L4 eNeuron"	-3.75204542048379
+"769"	"Dbnl"	"endothelial"	"L4 eNeuron"	-3.84220493150387
+"770"	"Map4k4"	"endothelial"	"L4 eNeuron"	-4.03115961008148
+"771"	"Ncald"	"endothelial"	"L4 eNeuron"	-4.05715843007928
+"772"	"Bcas1"	"endothelial"	"L4 eNeuron"	-4.10294116353536
+"773"	"Cotl1"	"endothelial"	"L4 eNeuron"	-4.18333154323583
+"774"	"Papss1"	"L5 eNeuron"	"L4 eNeuron"	-1.30074992784757
+"775"	"Pdia6"	"L4 eNeuron"	"L5 eNeuron"	-1.20206280662676
+"776"	"Kcnh5"	"L4 eNeuron"	"L5 eNeuron"	-1.22924456657561
+"777"	"Egr2"	"L4 eNeuron"	"L5 eNeuron"	-1.27860092185443
+"778"	"Cux2"	"L4 eNeuron"	"L5 eNeuron"	-1.48374481527653
+"779"	"Scrt1"	"L4 eNeuron"	"Lhx6 iNeuron"	-1.20406875159734
+"780"	"Tns3"	"L5 eNeuron"	"L5 eNeuron"	-1.01598757476735
+"781"	"Zfp768"	"L5 eNeuron"	"L5 eNeuron"	-1.03246249492457
+"782"	"Ncoa3"	"L5 eNeuron"	"L5 eNeuron"	-1.04689753425355
+"783"	"Polr3c"	"L5 eNeuron"	"L5 eNeuron"	-1.05169170426605
+"784"	"Zfp346"	"L5 eNeuron"	"L5 eNeuron"	-1.06955972967446
+"785"	"Tnrc6a"	"L5 eNeuron"	"L5 eNeuron"	-1.07840645047098
+"786"	"St3gal1"	"L5 eNeuron"	"L5 eNeuron"	-1.07860742275821
+"787"	"Ryr1"	"L5 eNeuron"	"L5 eNeuron"	-1.08081461038495
+"788"	"Zfp94"	"L5 eNeuron"	"L5 eNeuron"	-1.15554037214051
+"789"	"Smg7"	"L5 eNeuron"	"L5 eNeuron"	-1.19929750041341
+"790"	"Nmral1"	"L5 eNeuron"	"L5 eNeuron"	-1.20276529901156
+"791"	"Paxip1"	"L5 eNeuron"	"L5 eNeuron"	-1.24449308166078
+"792"	"Megf11"	"L5 eNeuron"	"L5 eNeuron"	-1.30692908896888
+"793"	"Grpel1"	"L5 eNeuron"	"L5 eNeuron"	-1.32709716878039
+"794"	"Traf5"	"L5 eNeuron"	"L5 eNeuron"	-1.34970315330825
+"795"	"Mcfd2"	"L5 eNeuron"	"L5 eNeuron"	-1.35213109729711
+"796"	"Tmem81"	"L5 eNeuron"	"L5 eNeuron"	-1.47821039561544
+"797"	"Grpel2"	"L5 eNeuron"	"L5 eNeuron"	-1.91250034623967
+"798"	"Arvcf"	"L5 eNeuron"	"L5 eNeuron"	-2.06386304828451
+"799"	"Pcdh8"	"Lhx6 iNeuron"	"L5 eNeuron"	-1.79440505282262
+"800"	"Ptprt"	"L5 eNeuron"	"OPC"	-1.15453919431243
+"801"	"Arhgap39"	"L5 eNeuron"	"OPC"	-1.2124404791525
+"802"	"Ube2i"	"L5 eNeuron"	"OPC"	-1.38658947093413
+"803"	"Cab39"	"L5 eNeuron"	"OPC"	-1.52204451284805
+"804"	"Arhgef1"	"astrocytes"	"L5 eNeuron"	-3.5110096314435
+"805"	"Plcg1"	"Lhx6 iNeuron"	"Adarb2 iNeuron"	-1.75079715763322
+"806"	"Trim8"	"Lhx6 iNeuron"	"Adarb2 iNeuron"	-1.89163902908307
+"807"	"Lonp1"	"Lhx6 iNeuron"	"Adarb2 iNeuron"	-2.21231369701643
+"808"	"Ndst1"	"Lhx6 iNeuron"	"Adarb2 iNeuron"	-2.3336793331377
+"809"	"Dym"	"Lhx6 iNeuron"	"Adarb2 iNeuron"	-2.57047554112902
+"810"	"Hid1"	"Lhx6 iNeuron"	"Adarb2 iNeuron"	-3.69813017916193
+"811"	"Ddx23"	"Lhx6 iNeuron"	"Adarb2 iNeuron"	-3.85167617234744
+"812"	"Mapk8ip3"	"endothelial"	"endothelial"	-2.72503975997598
+"813"	"Fbxo9"	"endothelial"	"endothelial"	-3.66585541634415
+"814"	"Phyhip"	"endothelial"	"endothelial"	-3.93245834726269
+"815"	"Fam57b"	"endothelial"	"endothelial"	-3.97949773711234
+"816"	"Bhlhb9"	"endothelial"	"L6 eNeuron"	-3.4918009058306
+"817"	"Gpatch2l"	"endothelial"	"L5 eNeuron"	-2.80299382114025
+"818"	"Mgat5b"	"L4 eNeuron"	"L6 eNeuron"	-1.23060016258355
+"819"	"Add2"	"L4 eNeuron"	"L6 eNeuron"	-1.2369333774989
+"820"	"Egr2"	"L4 eNeuron"	"L6 eNeuron"	-1.82836197384789
+"821"	"Cux2"	"L4 eNeuron"	"L6 eNeuron"	-3.17537588330307
+"822"	"Tprgl"	"L6 eNeuron"	"L4 eNeuron"	-1.02416033281389
+"823"	"Pdia3"	"mural"	"L5 eNeuron"	-4.22659125839787
+"824"	"Arhgef40"	"mural"	"L5 eNeuron"	-4.35237192078798
+"825"	"Plbd2"	"mural"	"L5 eNeuron"	-4.49016874871075
+"826"	"Fads1"	"mural"	"L5 eNeuron"	-4.66153093140681
+"827"	"Vps52"	"L6 eNeuron"	"mural"	-0.945981001963454
+"828"	"Unc13a"	"L6 eNeuron"	"OPC"	-0.926071881021719
+"829"	"Fam131b"	"L6 eNeuron"	"OPC"	-0.944000089997177
+"830"	"Tcf20"	"L6 eNeuron"	"OPC"	-0.945879537001932
+"831"	"Map7d1"	"L6 eNeuron"	"OPC"	-0.964166785088909
+"832"	"Lancl2"	"L6 eNeuron"	"OPC"	-0.989549822245323
+"833"	"Atp1b2"	"L6 eNeuron"	"OPC"	-1.04447861373675
+"834"	"Pacsin3"	"L6 eNeuron"	"OPC"	-1.09309591901944
+"835"	"Vash1"	"L6 eNeuron"	"OPC"	-1.45713184750586
+"836"	"Usp46"	"L6 eNeuron"	"Olig"	-0.931649954814717
+"837"	"Smc1b"	"Olig"	"astrocytes"	-2.63767703058542
+"838"	"Cpeb4"	"Olig"	"astrocytes"	-2.98825058222263
+"839"	"Txndc9"	"Olig"	"astrocytes"	-3.57228683261822
+"840"	"Wdr5b"	"Olig"	"astrocytes"	-3.57228683261822
+"841"	"Uqcrc1"	"endothelial"	"Olig"	-4.04302015806366
+"842"	"Rab24"	"L5 eNeuron"	"Olig"	-1.04907296244166
+"843"	"Rtfdc1"	"Olig"	"L5 eNeuron"	-2.6866070086072
+"844"	"Lman2l"	"Olig"	"OPC"	-3.56436080303562
+"845"	"Rem1"	"Olig"	"OPC"	-3.68887831616986
+"846"	"Cend1"	"Olig"	"OPC"	-3.76676304623463
+"847"	"Fam3c"	"Olig"	"OPC"	-3.9286549084533
+"848"	"Lbh"	"OPC"	"Olig"	-4.67675974361882
+"849"	"Atg12"	"microglia"	"L6 eNeuron"	-4.29274138525832
+"850"	"Lzts1"	"astrocytes"	"astrocytes"	-3.49099289051495
+"851"	"Eps15"	"astrocytes"	"astrocytes"	-3.49197300475362
+"852"	"Ptprj"	"OPC"	"astrocytes"	-3.99635186975589
+"853"	"Dlgap3"	"OPC"	"astrocytes"	-4.46372128528881
+"854"	"Atp13a2"	"astrocytes"	"OPC"	-3.87622767675676
+"855"	"Tmem151b"	"astrocytes"	"OPC"	-4.08823020485258
+"856"	"Peli3"	"Olig"	"Olig"	-3.48022846925812
+"857"	"Trabd"	"Olig"	"Olig"	-3.48261320472874
+"858"	"Pdk3"	"Olig"	"Olig"	-3.54447312767567
+"859"	"Epdr1"	"Olig"	"Olig"	-3.5691440304316
+"860"	"Thbs1"	"Olig"	"Olig"	-3.62274377180513
+"861"	"Dgcr8"	"Olig"	"Olig"	-3.78426037115319
+"862"	"Scaf8"	"Olig"	"Olig"	-3.80038271725832
+"863"	"Agps"	"Olig"	"Olig"	-3.86417060968471

@@ -1,0 +1,50 @@
+---
+title: "CCPLS Development"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r}
+## Prepare
+rm(list = ls())
+setwd("~/CCPLS_paper/Work/2022_07_seqFISH+_data_check")
+```
+
+
+```{r}
+# Reading files
+my_working_dir <- "~/CCPLS_paper/Work/2022_07_seqFISH+_data_check"
+output_dir <- "/results"
+
+source(paste0(my_working_dir, "/function/readSeqfishPlusData.R"))
+res.readSeqfishPlusData <- readSeqfishPlusData(my_working_dir)
+
+exp_mat_seqFISHplus <- res.readSeqfishPlusData$exp_mat
+annot_mat_seqFISHplus <- res.readSeqfishPlusData$annot_mat
+coord_mat_seqFISHplus <- res.readSeqfishPlusData$corrd_mat
+annot_score_mat_seqFISHplus <- res.readSeqfishPlusData$annot_score_mat
+gene_score_mat_seqFISHplus <- res.readSeqfishPlusData$gene_score_mat
+
+set.seed(1)
+exp_mat_l5 <- exp_mat_seqFISHplus[annot_mat_seqFISHplus[,3] == "L5.eNeuron",]
+seur_obj_l5 <- Seurat::CreateSeuratObject(counts = t(exp_mat_l5))
+seur_obj_l5 <- Seurat::NormalizeData(seur_obj_l5)
+seur_obj_l5 <- Seurat::FindVariableFeatures(seur_obj_l5, selection.method = "vst", nfeatures = 2000)
+HVG_flag_l5 <- seur_obj_l5@assays$RNA@meta.features[,"vst.variable"]
+HVG_list_l5 <- rownames(seur_obj_l5@assays$RNA@meta.features)[HVG_flag_l5]
+
+hist(as.double(seur_obj_l5@assays$RNA[HVG_list_l5, ]))
+```
+
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+

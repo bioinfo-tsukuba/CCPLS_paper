@@ -1,6 +1,10 @@
-heatmap_ICG <- function(df_ICG){
+heatmap_ICG <- function(df_ICG, res.sel.var){
   
-  uniq_ct <- union(df_ICG$receiver_cell_type, df_ICG$sender_cell_type)
+  df_ICG$receiver_cell_type <- gsub(" ", ".", df_ICG$receiver_cell_type)
+  df_ICG$sender_cell_type <- gsub(" ", ".", df_ICG$sender_cell_type)
+  
+  uniq_ct <- res.sel.var$cell_type_list
+  #uniq_ct <- union(df_ICG$receiver_cell_type, df_ICG$sender_cell_type)
   ct_num <- length(uniq_ct)
   
   # Up regulation
@@ -20,7 +24,7 @@ heatmap_ICG <- function(df_ICG){
 
       df_ICG_up_t <- df_ICG_up[t_flag, ]
       
-      icg_mat_up[r_ct, s_ct] <- nrow(df_ICG_up_t)
+      icg_mat_up[s_ct, r_ct] <- nrow(df_ICG_up_t)
 
     }
   }
@@ -29,7 +33,7 @@ heatmap_ICG <- function(df_ICG){
   
   pdf("ICGs_up.pdf")
   NMF::aheatmap(icg_mat_up, Rowv = NA, Colv = NA, color = "Reds", txt = icg_mat_up,
-                main = "Giotto up-regulation ICGs")
+                main = "Up-regulated ICGs by Giotto findICG")
   dev.off()
   
   # Down regulation
@@ -49,7 +53,7 @@ heatmap_ICG <- function(df_ICG){
       
       df_ICG_down_t <- df_ICG_down[t_flag, ]
       
-      icg_mat_down[r_ct, s_ct] <- nrow(df_ICG_down_t)
+      icg_mat_down[s_ct, r_ct] <- nrow(df_ICG_down_t)
       
     }
   }
@@ -58,7 +62,10 @@ heatmap_ICG <- function(df_ICG){
   
   pdf("ICGs_down.pdf")
   NMF::aheatmap(icg_mat_down, Rowv = NA, Colv = NA, color = "Blues", txt = icg_mat_down,
-                main = "Giotto down-regulation ICGs")
+                main = "Down-regulated ICGs by Giotto findICG")
   dev.off()
+  
+  return(list(icg_mat_up = icg_mat_up,
+              icg_mat_down = icg_mat_down))
   
 }
