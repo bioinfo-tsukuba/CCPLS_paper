@@ -1,5 +1,6 @@
 setwd("~/CCPLS_paper/Work/2022_06_giotto/Seq_Scope")
-
+download.file("https://figshare.com/ndownloader/files/36417207",
+              "~/CCPLS_paper/Work/2022_06_giotto/Seq_Scope/exp_mat_Seq_Scope.tsv")
 
 library(dplyr)
 library(ggplot2)
