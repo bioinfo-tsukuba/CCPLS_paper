@@ -1,1 +1,1 @@
-[1] "DCSC"        "Paneth-like" "Stem"       
+[1] "Paneth-like" "Stem"       
