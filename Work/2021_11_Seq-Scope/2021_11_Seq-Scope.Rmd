@@ -19,6 +19,8 @@ rm(list = ls())
 setwd("~/CCPLS_paper/Work/2021_11_Seq-Scope")
 my_working_dir <- "~/CCPLS_paper/Work/2021_11_Seq-Scope"
 set.seed(1)
+library(dplyr)
+library(ggplot2)
 ```
 
 ```{r}
