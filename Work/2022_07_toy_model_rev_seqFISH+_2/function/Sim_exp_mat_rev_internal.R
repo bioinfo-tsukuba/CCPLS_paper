@@ -18,7 +18,7 @@ Sim_exp_mat_rev_internal <- function(exp_mat, coord_mat, annot_mat,
   
   ## g: gene g, k: cell type k, i: cell i, j: feature j
   
-  set.seed(123)
+  set.seed(12)
   
   ## exp_mat_l5とHVG_list_l5からノイズ行列を生成する
   var_v <- apply(exp_mat_l5[, HVG_list_l5], 2, var)
