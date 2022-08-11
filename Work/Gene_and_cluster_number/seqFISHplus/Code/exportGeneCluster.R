@@ -25,6 +25,6 @@ exportGeneCluster <- function(res.sel.var, output_dir){
 }
 
 # Run
-res.sel.var <- readRDS("~/CCPLS_paper/Work/2022_08_cluster_and_gene/Seq-Scope/Code/res.sel.var.rds")
-output_dir <- "~/CCPLS_paper/Work/2022_08_cluster_and_gene/Seq-Scope/"
+res.sel.var <- readRDS("~/CCPLS_paper/Work/Gene_and_cluster_number/seqFISHplus/Code/res.sel.var.rds")
+output_dir <- "~/CCPLS_paper/Work/Gene_and_cluster_number/seqFISHplus/"
 exportGeneCluster(res.sel.var, output_dir)
