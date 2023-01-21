@@ -1,1 +1,1 @@
-[1] "B.cell-IgA"  "B.cell-IgG"  "Macrophage"  "Paneth-like"
+[1] "DCSC"       "Fibroblast"

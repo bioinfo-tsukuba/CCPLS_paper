@@ -1,1 +1,1 @@
-[1] "B.cell-Immature" "DCSC"            "Fibroblast"     
+[1] "B.cell-IgA"  "B.cell-IgG"  "Paneth-like"

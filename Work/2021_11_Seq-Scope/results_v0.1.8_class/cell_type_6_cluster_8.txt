@@ -1,2 +1,2 @@
-[1] "B.cell-IgA"    "B.cell-IgG"    "DCSC"          "Fibroblast"    "Smooth.Muscle"
-[6] "Stem"         
+[1] "B.cell-IgA"    "B.cell-IgG"    "DCSC"          "Fibroblast"   
+[5] "Smooth.Muscle" "Stem"         

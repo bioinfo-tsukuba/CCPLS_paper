@@ -1,1 +1,2 @@
-[1] "B.cell-Immature" "DCSC"            "Fibroblast"      "Macrophage"      "Smooth.Muscle"  
+[1] "B.cell-Immature" "DCSC"            "Fibroblast"     
+[4] "Macrophage"      "Smooth.Muscle"  

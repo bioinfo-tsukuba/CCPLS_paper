@@ -1,1 +1,2 @@
-[1] "B.cell-Immature" "DCSC"            "Macrophage"      "Paneth-like"    
+[1] "B.cell-Immature" "DCSC"            "Macrophage"     
+[4] "Paneth-like"    

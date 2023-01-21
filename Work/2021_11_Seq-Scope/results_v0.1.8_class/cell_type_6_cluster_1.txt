@@ -1,1 +1,2 @@
-[1] "B.cell-IgA"      "B.cell-Immature" "DCSC"            "Smooth.Muscle"  
+[1] "B.cell-IgA"      "B.cell-Immature" "DCSC"           
+[4] "Smooth.Muscle"  

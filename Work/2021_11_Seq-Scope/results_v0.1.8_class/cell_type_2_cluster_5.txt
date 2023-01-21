@@ -1,1 +1,1 @@
-[1] "Paneth-like" "Stem"       
+[1] "B.cell-Immature" "Paneth-like"    

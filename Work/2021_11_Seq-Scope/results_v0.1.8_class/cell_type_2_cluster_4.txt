@@ -1,1 +1,1 @@
-[1] "Smooth.Muscle"
+[1] "B.cell-IgA"  "B.cell-IgG"  "Macrophage"  "Paneth-like"

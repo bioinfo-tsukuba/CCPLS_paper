@@ -1,2 +1,3 @@
-[1] "B.cell-IgA"      "B.cell-IgG"      "B.cell-Immature" "Fibroblast"      "Macrophage"     
-[6] "Smooth.Muscle"   "Stem"           
+[1] "B.cell-IgA"      "B.cell-IgG"      "B.cell-Immature"
+[4] "Fibroblast"      "Macrophage"      "Smooth.Muscle"  
+[7] "Stem"           
